@@ -1,0 +1,8 @@
+/usr/bin/fyd-cli		--	gen_context(system_u:object_r:fyd_exec_t,s0)
+/usr/sbin/fydd		--	gen_context(system_u:object_r:fyd_exec_t,s0)
+/usr/lib(64)?/fyd/fydd		--	gen_context(system_u:object_r:fyd_exec_t,s0)
+
+/etc/fyd(/.*)?		gen_context(system_u:object_r:fyd_conf_t,s0)
+/var/lib/fyd(/.*)?		gen_context(system_u:object_r:fyd_var_lib_t,s0)
+
+(/var)?/run/fydd(/.*)?   gen_context(system_u:object_r:fyd_var_run_t,s0)

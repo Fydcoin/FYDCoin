@@ -1,0 +1,36 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/fyd_bg.qm</file>
+        <file alias="ca">locale/fyd_ca.qm</file>
+        <file alias="cs">locale/fyd_cs.qm</file>
+        <file alias="da">locale/fyd_da.qm</file>
+        <file alias="de">locale/fyd_de.qm</file>
+        <file alias="en">locale/fyd_en.qm</file>
+        <file alias="en_US">locale/fyd_en_US.qm</file>
+        <file alias="eo">locale/fyd_eo.qm</file>
+        <file alias="es">locale/fyd_es.qm</file>
+        <file alias="es_ES">locale/fyd_es_ES.qm</file>
+        <file alias="fi">locale/fyd_fi.qm</file>
+        <file alias="fr_FR">locale/fyd_fr_FR.qm</file>
+        <file alias="hi_IN">locale/fyd_hi_IN.qm</file>
+        <file alias="hr">locale/fyd_hr.qm</file>
+        <file alias="hr_HR">locale/fyd_hr_HR.qm</file>
+        <file alias="it">locale/fyd_it.qm</file>
+        <file alias="ja">locale/fyd_ja.qm</file>
+        <file alias="ko_KR">locale/fyd_ko_KR.qm</file>
+        <file alias="lt_LT">locale/fyd_lt_LT.qm</file>
+        <file alias="nl">locale/fyd_nl.qm</file>
+        <file alias="pl">locale/fyd_pl.qm</file>
+        <file alias="pt">locale/fyd_pt.qm</file>
+        <file alias="pt_BR">locale/fyd_pt_BR.qm</file>
+        <file alias="ro_RO">locale/fyd_ro_RO.qm</file>
+        <file alias="ru">locale/fyd_ru.qm</file>
+        <file alias="sk">locale/fyd_sk.qm</file>
+        <file alias="sv">locale/fyd_sv.qm</file>
+        <file alias="tr">locale/fyd_tr.qm</file>
+        <file alias="uk">locale/fyd_uk.qm</file>
+        <file alias="vi">locale/fyd_vi.qm</file>
+        <file alias="zh_CN">locale/fyd_zh_CN.qm</file>
+        <file alias="zh_TW">locale/fyd_zh_TW.qm</file>
+    </qresource>
+</RCC>

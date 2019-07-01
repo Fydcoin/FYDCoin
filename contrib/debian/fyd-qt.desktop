@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=FYD
+Comment=FYD P2P Cryptocurrency
+Comment[fr]=FYD, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=FYD, eşten eşe kriptografik sanal para birimi
+Exec=fyd-qt %u
+Terminal=false
+Type=Application
+Icon=fyd128
+MimeType=x-scheme-handler/fyd;
+Categories=Office;Finance;
