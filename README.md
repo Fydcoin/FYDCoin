@@ -8,6 +8,7 @@ Website: [fydcoin.com](https://www.fydcoin.com)
 Block Explorer: [explorer.fydcoin.com](http://explorer.fydcoin.com/)
  
 ### FYDCoin Specs
+
 <table>
 <tr><td>Ticker</td><td>FYD</td></tr>
 <tr><td>Algo</td><td>X11</td></tr>
@@ -21,6 +22,7 @@ RPC Port 37484
 P2P Port 37485 
 
 ### Rewards Breakdown
+
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
  style='border-collapse:collapse;table-layout:fixed;width:528pt'>
  <col class=xl6553517252 width=139 style='mso-width-source:userset;mso-width-alt:
@@ -209,6 +211,7 @@ P2P Port 37485
   </tr>
  </table>
 
+
 ### FYD Community
 
 <table>
@@ -218,11 +221,23 @@ P2P Port 37485
 </table>
 
 ### Exchanges
-https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
+
+<table>
+<tr><td>Crypto bridge:</td><td>https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
+</td></tr>
+</table>
 
 ### Masternode Tracking
-Masternodes.online: https://masternodes.online/currencies/FYD/
-Masternodes.pro: https://masternodes.pro/stats/fyd/statistics
+
+<table>
+<tr><td>Masternodes.online:</td><td>https://masternodes.online/currencies/FYD/</td></tr>
+<tr><td>Masternodes.pro: </td><td>https://masternodes.pro/stats/fyd/statistics
+</td></tr>
+</table>
 
 ### Masternode hosting Services 
-Ihostmn: https://ihostmn.com/hostmn.php?coin=FYD
+
+<table>
+<tr><td>Ihostmn:</td><td>https://ihostmn.com/hostmn.php?coin=FYD
+</td></tr>
+</table>
