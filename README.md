@@ -1,18 +1,19 @@
-FindYourDeveloperCoin Core integration/staging repository
+FYDCoin Core integration/staging repository
 =====================================
 
 
-FydCoin is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  
+FYDCoin is an open source decentralized crypto-currency focused on fast transactions with low transaction fees.
+
 More information at [fydcoin.com](http://www.fydcoin.com)
 
-### Coin Specs
+### FYDCoin Specs
 <table>
 <tr><td>Ticker</td><td>FYD</td></tr>
 <tr><td>Algo</td><td>X11</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>650M</td></tr>
-<tr><td>Premine</td><td>650,000 FYD*</td></tr>
+<tr><td>Premine</td><td>650,000 FYD</td></tr>
 </table>
 
 RPC Port 37484 
