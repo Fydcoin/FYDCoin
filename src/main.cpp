@@ -1915,20 +1915,54 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 2500 * COIN;
     } else if (nHeight <= 200000 && nHeight > 175000) {
         nSubsidy = 3000 * COIN;
-    } else if (nHeight <= 250000 && nHeight > 200000) {
+    } else if (nHeight <= 245000 && nHeight > 200000) {
         nSubsidy = 1500 * COIN;
-    } else if (nHeight <= 350000 && nHeight > 250000) {
-        nSubsidy = 750 * COIN;
-    } else if (nHeight <= 500000 && nHeight > 350000) {
+    } else if (nHeight <= 250000 && nHeight > 245000) {
+        nSubsidy = 2620 * COIN;
+    }else if (nHeight <= 294000 && nHeight > 250000) {
+        nSubsidy = 800 * COIN;
+    }else if (nHeight <= 338000 && nHeight > 294000) {
+        nSubsidy = 700 * COIN;
+    }else if (nHeight <= 382000 && nHeight > 338000) {
+        nSubsidy = 600 * COIN;
+    }else if (nHeight <= 426000 && nHeight > 382000) {
+        nSubsidy = 500 * COIN;
+    }else if (nHeight <= 470000 && nHeight > 426000) {
+        nSubsidy = 400 * COIN;
+    }else if (nHeight <= 526000 && nHeight > 470000) {
         nSubsidy = 300 * COIN;
+    }else if (nHeight <= 1052000 && nHeight > 526000) {
+        nSubsidy = 200 * COIN;
+    }else if (nHeight <= 1578000 && nHeight > 1052000) {
+        nSubsidy = 100 * COIN;
+    }else if (nHeight <= 2104000 && nHeight > 1578000) {
+        nSubsidy = 50 * COIN;
+    }else if (nHeight <= 2630000 && nHeight > 2104000) {
+        nSubsidy = 25 * COIN;
+    }else if (nHeight <= 3156000 && nHeight > 2630000) {
+        nSubsidy = 10 * COIN;
+    }else if (nHeight <= 3682000 && nHeight > 3156000) {
+        nSubsidy = 5 * COIN;
+    }else if (nHeight <= 4208000 && nHeight > 3682000) {
+        nSubsidy = 2.5 * COIN;
+    }else if (nHeight <= 4734000 && nHeight > 4208000) {
+        nSubsidy = 1.25 * COIN;
+    }else if (nHeight <= 5260000 && nHeight > 4734000) {
+        nSubsidy = 0.25 * COIN;
+    }else if (nHeight <= 5786000 && nHeight > 5260000) {
+        nSubsidy = 0.05 * COIN;
+    }else if (nHeight <= 6312000 && nHeight > 5786000) {
+        nSubsidy = 0.01 * COIN;
+    }else if (nHeight <= 6838000 && nHeight > 6312000) {
+        nSubsidy = 0.002 * COIN;
     } else {
-        nSubsidy = 150 * COIN;
+        nSubsidy = 0.0004 * COIN;
     }
     return nSubsidy;
 }
 
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZFYDStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     int64_t ret = 0;
 
@@ -1937,10 +1971,13 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= Params().LAST_POW_BLOCK()) {
+    if (nHeight <= Params().LAST_POW_BLOCK() ) {
     	return 0;
-    } else if (nHeight > Params().LAST_POW_BLOCK()){
+    } else if (nHeight > Params().LAST_POW_BLOCK()  && nHeight <= 245000  ){
         ret = blockValue * 9/10;
+    }
+    else{
+      ret = blockValue * 7/10;  //70% for MN, 20% for POS, 10% for Treasury
     }
 
     return ret;
@@ -3866,6 +3903,47 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     return true;
 }
 
+bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
+{
+	const CTransaction& txNew = (block.IsProofOfStake() ? block.vtx[1] : block.vtx[0]);
+
+	CScript devRewardscriptPubKey = Params().GetScriptForDevFeeDestination();
+
+	bool found = false;
+        BOOST_FOREACH (CTxOut out, txNew.vout) {
+
+			/* CTxDestination address1;
+			ExtractDestination(out.scriptPubKey, address1);
+			CBitcoinAddress address2(address1);
+            LogPrintf("IsDevFeeValid: payee %s, value %f\n", address2.ToString(), out.nValue / COIN);
+			*/
+            if (devRewardscriptPubKey == out.scriptPubKey) {
+
+                //LogPrintf("Found dev fee address, value is %f, expected is %f\n", out.nValue / (float)COIN, GetBlockValue(nBlockHeight)*0.07/COIN);
+
+                CAmount blockValue = GetBlockValue(nBlockHeight);
+                CAmount devfee = 0;
+                if(nBlockHeight >= 245000){
+                   devfee = blockValue * 0.10; //10%
+                }
+                else{
+                   devfee = blockValue * 0; //0%
+                }
+
+
+ 				if(out.nValue >= devfee) {
+					found = true;
+					break;
+				}
+                else
+                    LogPrintf("IsDevFeeValid: cannot find the dev fee in the transaction list.\n");
+            }
+        }
+
+     return found;
+
+}
+
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig)
 {
     // These are checks that are independent of context.
@@ -5697,7 +5775,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
-                !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
+                !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) ;
 
         if (fMissingSporks || !fRequestedSporksIDB){
             LogPrintf("asking peer for sporks\n");
@@ -6578,8 +6656,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     // SPORK_14 is used for 70913 (v3.1.0+)
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    //if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+          //  return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+
+    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_3;
 
     // SPORK_15 was used for 70912 (v3.0.5+), commented out now.
     //if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))

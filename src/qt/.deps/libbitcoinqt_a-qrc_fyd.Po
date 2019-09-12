@@ -1,0 +1,1 @@
+qt/libbitcoinqt_a-qrc_fyd.o: qt/qrc_fyd.cpp

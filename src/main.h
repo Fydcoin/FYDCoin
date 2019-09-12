@@ -91,14 +91,11 @@ inline int64_t GetMstrNodCollateral(int nHeight){
         return 300000;
     } else if (nHeight <= 200000 && nHeight > 175000) {
         return 400000;
-    } else if (nHeight <= 250000 && nHeight > 200000) {
+    } else if (nHeight <= 245000 && nHeight > 200000) {
         return 200000;
-    } else if (nHeight <= 350000 && nHeight > 250000) {
-        return 100000;
-    } else if (nHeight <= 500000 && nHeight > 350000) {
-        return 50000;
-    }
-    return 25000;
+    } else{
+    return 400000;
+  }
 }
 
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/
@@ -277,7 +274,7 @@ bool GetTransaction(const uint256& hash, CTransaction& tx, uint256& hashBlock, b
 
 // ***TODO***
 double ConvertBitsToDouble(unsigned int nBits);
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZFYDStake);
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount = 0);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
 bool ActivateBestChain(CValidationState& state, CBlock* pblock = NULL, bool fAlreadyChecked = false);

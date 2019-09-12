@@ -310,8 +310,18 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         }
     }
 
-    CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZFYDStake);
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight+1);
+    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight+1, blockValue);
+
+	//Adding devfee to the TX
+
+    CAmount devfee=0;
+  if(pindexPrev->nHeight+1 >= 245000){
+     devfee = blockValue * 0.10; //10%
+  }
+  else{
+     devfee = blockValue * 0; //0%
+  }
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -326,13 +336,24 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i].nValue = masternodePayment;
 
             //subtract mn payment from the stake reward
-            if (!txNew.vout[1].IsZerocoinMint())
-                txNew.vout[i - 1].nValue -= masternodePayment;
+            CAmount reductionFee = masternodePayment+devfee; //we need to reduce amount staking payee, but we have to take into account stake split
+
+            if(txNew.vout[i - 1].nValue < reductionFee) {
+				//stake split, we have to distribute reduction over it
+				txNew.vout[i - 1].nValue -= reductionFee / 2;
+				assert( (i-2) >= 0); //should never happen
+				txNew.vout[i - 2].nValue -= reductionFee / 2;
+
+			} else {
+				//usual situation, reduce as usual
+				txNew.vout[i - 1].nValue -= reductionFee;
+			}
+
         } else {
             txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = masternodePayment;
-            txNew.vout[0].nValue = blockValue - masternodePayment;
+            txNew.vout[0].nValue = blockValue - masternodePayment - devfee;
         }
 
         CTxDestination address1;
@@ -340,7 +361,27 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
-    }
+    } else {
+		if (!fProofOfStake) {
+			txNew.vout[0].nValue = blockValue - masternodePayment - devfee;
+		} else { //PoS without masternodes
+
+			unsigned int i = txNew.vout.size();
+
+			//txNew.vout[1].nValue = blockValue - devfee;
+			txNew.vout[i-1].nValue -= devfee;
+			//LogPrintf("FillBlockPayee - no masternode payments, all block value to PoS\n");
+		}
+	}
+
+	//Adding devfee to the TX
+	int payments = txNew.vout.size() + 1;
+	txNew.vout.resize(payments);
+
+	CScript devRewardscriptPubKey = Params().GetScriptForDevFeeDestination();
+
+	txNew.vout[payments-1].scriptPubKey = devRewardscriptPubKey;
+	txNew.vout[payments-1].nValue = devfee;
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()
@@ -544,7 +585,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         nMasternode_Drift_Count = mnodeman.size() + Params().MasternodeCountDrift();
     }
 
-    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward, nMasternode_Drift_Count, txNew.IsZerocoinSpend());
+    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward, nMasternode_Drift_Count);
 
     //require at least 6 signatures
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments)

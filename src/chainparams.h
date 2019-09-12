@@ -93,6 +93,9 @@ public:
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     bool ZeroCoinEnabled() const { return fZeroCoinEnabled; }
 
+    static std::string GetDevFeeRewardAddress();
+static CScript GetScriptForDevFeeDestination();
+
     /** Spork key and Masternode Handling **/
     std::string SporkKey() const { return strSporkKey; }
     std::string SporkKeyOld() const { return strSporkKeyOld; }

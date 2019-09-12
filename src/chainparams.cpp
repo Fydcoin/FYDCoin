@@ -7,14 +7,19 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "libzerocoin/Params.h"
+
 #include "chainparams.h"
 #include "random.h"
 #include "util.h"
 #include "utilstrencodings.h"
-
+#include <string.h>
+#include "crypto/scrypt.h"
 #include <assert.h>
-
+#include <stdlib.h>
+#include <stdint.h>
+#include <openssl/sha.h>
 #include <boost/assign/list_of.hpp>
+#include "masternode.h"
 
 using namespace std;
 using namespace boost::assign;
@@ -143,8 +148,8 @@ public:
         nBlockEnforceInvalidUTXO = std::numeric_limits<int>::max(); //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0 * COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = std::numeric_limits<int>::max(); //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-        nEnforceNewSporkKey = 1556150400; //!> Sporks signed after (GMT): Thursday, Apr 25, 2019 12:00:00 AM GMT must use the new spork key
-        nRejectOldSporkKey = 1558742400; //!> Fully reject old spork key after (GMT): Saturday, May 25, 2019 12:00:00 AM
+        nEnforceNewSporkKey = 1568121494; //!> Sporks signed after (GMT): Thursday, Sept 10, 2019 12:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1570713494; //!> Fully reject old spork key after (GMT): Oct 10, 2019 12:00:00 AM
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -186,12 +191,9 @@ public:
 //        vSeeds.push_back(CDNSSeedData("seed3.fydcoin.com", "seed3.fydcoin.com"));
 //        vSeeds.push_back(CDNSSeedData("seed4.fydcoin.com", "seed4.fydcoin.com"));
 //        vSeeds.push_back(CDNSSeedData("seed5.fydcoin.com", "seed5.fydcoin.com"));
-        vSeeds.push_back(CDNSSeedData("178.128.27.160", "178.128.27.160"));
-        vSeeds.push_back(CDNSSeedData("178.128.98.107", "178.128.98.107"));
-        vSeeds.push_back(CDNSSeedData("178.128.113.212", "178.128.113.212"));
-        vSeeds.push_back(CDNSSeedData("178.128.52.223", "178.128.52.223"));
-        vSeeds.push_back(CDNSSeedData("178.128.51.232", "178.128.51.232"));
-        vSeeds.push_back(CDNSSeedData("178.128.90.235", "178.128.90.235"));
+        vSeeds.push_back(CDNSSeedData("149.28.213.113", "149.28.213.113"));
+        vSeeds.push_back(CDNSSeedData("149.28.172.168", "149.28.172.168"));
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 36);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);
@@ -214,8 +216,8 @@ public:
         fZeroCoinEnabled = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "047dfaf881ec7f8652d8f02deb46ae65e1dc65c38866e04412446abd0e869c23f90cc4e67cd91ffcde1b8bb657111191008247e5ebeefd75838e88af0b2a5cf0fc";
-        strSporkKeyOld = "0407a0a06cc19eb3a62cedf54de99063500ea0442ff571054e64d335227001da7585e35e09f69c4c088d9aa039840693e37c95d610a995baa59f536d1bfd0e1701";
+        strSporkKey = "04B89E29544581F4955C3781192C01E44BD63F371B81F9017DC144AE0BD790EAF805D713E9AA617B986C6A2D1E2AB0016D044A4BC0F6BB204AA9D7D34F5A638666";
+        strSporkKeyOld = "047dfaf881ec7f8652d8f02deb46ae65e1dc65c38866e04412446abd0e869c23f90cc4e67cd91ffcde1b8bb657111191008247e5ebeefd75838e88af0b2a5cf0fc";
         strObfuscationPoolDummyAddress = "FY9iXz6kpuVt1wU6Yc9tANJKLhccD9Qwdn";
         nStartMasternodePayments = 1550372857; //Sun, 17 Feb 2019 03:07:37 GMT
 
@@ -243,6 +245,19 @@ public:
     }
 };
 static CMainParams mainParams;
+
+std::string CChainParams::GetDevFeeRewardAddress()
+{
+	return "FsVTUfUcyiMRLwqKPSQKbFHEDnjBV6tefP";
+}
+
+CScript CChainParams::GetScriptForDevFeeDestination() {
+    CBitcoinAddress address(GetDevFeeRewardAddress().c_str());
+    assert(address.IsValid());
+
+    CScript script = GetScriptForDestination(address.Get());
+    return script;
+}
 
 /**
  * Testnet (v3)
