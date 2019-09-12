@@ -4,12 +4,10 @@ FYDCoin Core integration/staging repository
 
 FYDCoin is an open source decentralized crypto-currency focused on fast transactions with low transaction fees.
 
-More information at [fydcoin.com](http://www.fydcoin.com)
-
 Website: [fydcoin.com](http://www.fydcoin.com)
 Block Explorer: http://explorer.fydcoin.com/
 
-### FYD Media
+### FYD Community
 Discord: https://discord.gg/zvyQ9jJ
 Twitter: https://twitter.com/FydcoinO
 Medium: https://medium.com/@fydcoin
@@ -24,7 +22,7 @@ https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
 Masternodes.online: https://masternodes.online/currencies/FYD/
 Masternodes.pro: https://masternodes.pro/stats/fyd/statistics
 
-### Masternode hosting Services
+### Masternode hosting Services (FREE FYD masternode hosting for FYD holders)
 Ihostmn: https://ihostmn.com/hostmn.php?coin=FYD
 
 ### FYDCoin Specs
