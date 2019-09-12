@@ -210,9 +210,12 @@ P2P Port 37485
  </table>
 
 ### FYD Community
-Discord: https://discord.gg/zvyQ9jJ
-Twitter: https://twitter.com/FydcoinO
-Medium: https://medium.com/@fydcoin
+
+<table>
+<tr><td>Discord:</td><td>https://discord.gg/zvyQ9jJ</td></tr>
+<tr><td>Twitter:</td><td>https://twitter.com/FydcoinO</td></tr>
+<tr><td>Medium:</td><td>https://medium.com/@fydcoin</td></tr>
+</table>
 
 ### Exchanges
 https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
