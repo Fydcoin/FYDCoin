@@ -4,9 +4,9 @@ FYDCoin Core integration/staging repository
 
 FYDCoin is an open source decentralized crypto-currency focused on fast transactions with low transaction fees.
 
-Website: [fydcoin.com](http://www.fydcoin.com)
-Block Explorer: http://explorer.fydcoin.com/
-
+Website: [fydcoin.com](https://www.fydcoin.com)
+Block Explorer: [explorer.fydcoin.com](http://explorer.fydcoin.com/)
+ 
 ### FYDCoin Specs
 <table>
 <tr><td>Ticker</td><td>FYD</td></tr>
