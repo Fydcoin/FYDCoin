@@ -11,9 +11,6 @@ Block Explorer: http://explorer.fydcoin.com/
 Discord: https://discord.gg/zvyQ9jJ
 Twitter: https://twitter.com/FydcoinO
 Medium: https://medium.com/@fydcoin
-Instagram: https://www.instagram.com/fydcoin
-Twitch: https://www.twitch.tv/fydcoin
-Reddit: https://www.reddit.com/user/FYDCOIN
 
 ### Exchanges
 https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
