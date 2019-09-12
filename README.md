@@ -6,6 +6,27 @@ FYDCoin is an open source decentralized crypto-currency focused on fast transact
 
 More information at [fydcoin.com](http://www.fydcoin.com)
 
+Website: [fydcoin.com](http://www.fydcoin.com)
+Block Explorer: http://explorer.fydcoin.com/
+
+###FYD Media
+Discord: https://discord.gg/zvyQ9jJ
+Twitter: https://twitter.com/FydcoinO
+Medium: https://medium.com/@fydcoin
+Instagram: https://www.instagram.com/fydcoin
+Twitch: https://www.twitch.tv/fydcoin
+Reddit: https://www.reddit.com/user/FYDCOIN
+
+###Exchanges
+https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
+
+###Masternode Tracking
+Masternodes.online: https://masternodes.online/currencies/FYD/
+Masternodes.pro: https://masternodes.pro/stats/fyd/statistics
+
+###Masternode hosting Services
+Ihostmn: https://ihostmn.com/hostmn.php?coin=FYD
+
 ### FYDCoin Specs
 <table>
 <tr><td>Ticker</td><td>FYD</td></tr>
