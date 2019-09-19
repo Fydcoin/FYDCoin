@@ -382,8 +382,9 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
     case TransactionRecord::StakeZFYD:
-    case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
+    case TransactionRecord::MNReward:
+        return QIcon(":/icons/tx_masternode");
     case TransactionRecord::RecvWithObfuscation:
     case TransactionRecord::RecvWithAddress:
     case TransactionRecord::RecvFromOther:
@@ -428,10 +429,18 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
         return tr("Anonymous (zFYD Transaction)");
     case TransactionRecord::StakeZFYD:
         return tr("Anonymous (zFYD Stake)");
-    case TransactionRecord::SendToSelf:
-    default:
-        return tr("(n/a)") + watchAddress;
-    }
+    case TransactionRecord::SendToSelf: {
+            QString label = walletModel->getAddressTableModel()->labelForAddress(QString::fromStdString(wtx->address));
+            return label.isEmpty() ? "" : label;
+        }
+        default: {
+            if (watchAddress.isEmpty()) {
+                return tr("No information");
+            } else {
+                return tr("(n/a)") + watchAddress;
+            }
+        }
+      }
 }
 
 QVariant TransactionTableModel::addressColor(const TransactionRecord* wtx) const

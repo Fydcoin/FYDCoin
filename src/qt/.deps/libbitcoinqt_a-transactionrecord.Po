@@ -1295,7 +1295,7 @@ qt/libbitcoinqt_a-transactionrecord.o: qt/transactionrecord.cpp \
   /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/xlocale/_inttypes.h \
-  zfydtracker.h zfydwallet.h mintpool.h swifttx.h spork.h zfydchain.h
+  zfydtracker.h zfydwallet.h mintpool.h swifttx.h spork.h
 
 qt/transactionrecord.h:
 
@@ -4048,5 +4048,3 @@ mintpool.h:
 swifttx.h:
 
 spork.h:
-
-zfydchain.h:

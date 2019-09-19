@@ -60,8 +60,16 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("00000b38f21cd5cec9a047797e6422aeadfab829ac97d8276fba81aa15c91094"))
+    (1000, uint256("d35988952078dbe101557ad51d904917c0e79c41fd6af34e43ed7296c293eb5f"))
+    (5000, uint256("4983d36a1f772ca0f5c1479ac16bdb961f20d0dd62c47ab91227e510e7a94d5f"))
+    (10000, uint256("944f0bd3ea680b1957aa3570af3a2bfadd5b863cf2f0e3b223d0a8e3c9a75496"))
+    (20000, uint256("8d120e1b7165a42dd23793c1467bb964db4201a09ca89c463bdbb78786a179f2"))
+    (50000, uint256("a03ca44b7c76a6e76bd7aac24eaef9be6465454f91a4f747bc73258a6130cce3"))
     (76650, uint256("2d3f6f3f666e9711c9b34a1e0b15bf539f7a98281bb3a8d92d481f4ed5af5a4f"))
+    (100000, uint256("77a6ea793249f27f2e9b8b450f28652e8172d17f9cc51588af4779e5f729f2c3"))
+    (150000, uint256("37e2c6c8941eef4ba49d33425d90ac52560c84377538c0ab965432fd9f0ddc7c"))
     (211589, uint256("3eb79a1eaa501864666f086dc6a091edc6fb68f7e5f9ca73b3fa721b41263cac"))
+    (245002, uint256("59e03b5ec6d6ce7e9110ff191619d20dbe403008974fbc4d77055ba5bc937d03"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -193,6 +201,11 @@ public:
 //        vSeeds.push_back(CDNSSeedData("seed5.fydcoin.com", "seed5.fydcoin.com"));
         vSeeds.push_back(CDNSSeedData("149.28.213.113", "149.28.213.113"));
         vSeeds.push_back(CDNSSeedData("149.28.172.168", "149.28.172.168"));
+        vSeeds.push_back(CDNSSeedData("199.247.17.245", "199.247.17.245"));
+        vSeeds.push_back(CDNSSeedData("78.141.200.80", "78.141.200.80"));
+        vSeeds.push_back(CDNSSeedData("144.202.26.133", "144.202.26.133"));
+        vSeeds.push_back(CDNSSeedData("45.76.44.27", "45.76.44.27"));
+        vSeeds.push_back(CDNSSeedData("136.244.103.106", "136.244.103.106"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 36);

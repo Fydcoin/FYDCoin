@@ -1,8 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2019 The FYD developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2015-2017 The PIVX developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "transactionrecord.h"
@@ -12,7 +11,6 @@
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet.h"
-#include "zfydchain.h"
 
 #include <stdint.h>
 
@@ -41,115 +39,37 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     CAmount nNet = nCredit - nDebit;
     uint256 hash = wtx.GetHash();
     std::map<std::string, std::string> mapValue = wtx.mapValue;
-    bool fZSpendFromMe = false;
-
-    if (wtx.IsZerocoinSpend()) {
-        // a zerocoin spend that was created by this wallet
-        libzerocoin::CoinSpend zcspend = TxInToZerocoinSpend(wtx.vin[0]);
-        fZSpendFromMe = wallet->IsMyZerocoinSpend(zcspend.getCoinSerialNumber());
-    }
 
     if (wtx.IsCoinStake()) {
         TransactionRecord sub(hash, nTime);
         CTxDestination address;
-        if (!wtx.IsZerocoinSpend() && !ExtractDestination(wtx.vout[1].scriptPubKey, address))
+        if (!ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return parts;
 
-        if (wtx.IsZerocoinSpend() && (fZSpendFromMe || wallet->zfydTracker->HasMintTx(hash))) {
-            //zFYD stake reward
-            sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZFYD;
-            sub.address = mapValue["zerocoinmint"];
-            sub.credit = 0;
-            for (const CTxOut& out : wtx.vout) {
-                if (out.IsZerocoinMint())
-                    sub.credit += out.nValue;
+        if (!IsMine(*wallet, address)) {
+            //if the address is not yours then it means you have a tx sent to you in someone elses coinstake tx
+            for (unsigned int i = 1; i < wtx.vout.size(); i++) {
+                CTxDestination outAddress;
+                if (ExtractDestination(wtx.vout[i].scriptPubKey, outAddress)) {
+                    if (IsMine(*wallet, outAddress)) {
+                        isminetype mine = wallet->IsMine(wtx.vout[i]);
+                        sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
+                        sub.type = TransactionRecord::MNReward;
+                        sub.address = CBitcoinAddress(outAddress).ToString();
+                        sub.credit = wtx.vout[i].nValue;
+                    }
+                }
             }
-            sub.debit -= wtx.vin[0].nSequence * COIN;
-        } else if (isminetype mine = wallet->IsMine(wtx.vout[1])) {
-            // FYD stake reward
+        } else {
+            //stake reward
+            isminetype mine = wallet->IsMine(wtx.vout[1]);
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             sub.type = TransactionRecord::StakeMint;
             sub.address = CBitcoinAddress(address).ToString();
             sub.credit = nNet;
-        } else {
-            //Masternode reward
-            CTxDestination destMN;
-            int nIndexMN = wtx.vout.size() - 1;
-            if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && IsMine(*wallet, destMN)) {
-                isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
-                sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                sub.type = TransactionRecord::MNReward;
-                sub.address = CBitcoinAddress(destMN).ToString();
-                sub.credit = wtx.vout[nIndexMN].nValue;
-            }
         }
-
         parts.append(sub);
-    } else if (wtx.IsZerocoinSpend()) {
-        //zerocoin spend outputs
-        bool fFeeAssigned = false;
-        for (const CTxOut& txout : wtx.vout) {
-            // change that was reminted as zerocoins
-            if (txout.IsZerocoinMint()) {
-                // do not display record if this isn't from our wallet
-                if (!fZSpendFromMe)
-                    continue;
-
-                isminetype mine = wallet->IsMine(txout);
-                TransactionRecord sub(hash, nTime);
-                sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                sub.type = TransactionRecord::ZerocoinSpend_Change_zFyd;
-                sub.address = mapValue["zerocoinmint"];
-                if (!fFeeAssigned) {
-                    sub.debit -= (wtx.GetZerocoinSpent() - wtx.GetValueOut());
-                    fFeeAssigned = true;
-                }
-                sub.idx = parts.size();
-                parts.append(sub);
-                continue;
-            }
-
-            string strAddress = "";
-            CTxDestination address;
-            if (ExtractDestination(txout.scriptPubKey, address))
-                strAddress = CBitcoinAddress(address).ToString();
-
-            // a zerocoinspend that was sent to an address held by this wallet
-            isminetype mine = wallet->IsMine(txout);
-            if (mine) {
-                TransactionRecord sub(hash, nTime);
-                sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                if (fZSpendFromMe) {
-                    sub.type = TransactionRecord::ZerocoinSpend_FromMe;
-                } else {
-                    sub.type = TransactionRecord::RecvFromZerocoinSpend;
-                    sub.credit = txout.nValue;
-                }
-                sub.address = mapValue["recvzerocoinspend"];
-                if (strAddress != "")
-                    sub.address = strAddress;
-                sub.idx = parts.size();
-                parts.append(sub);
-                continue;
-            }
-
-            // spend is not from us, so do not display the spend side of the record
-            if (!fZSpendFromMe)
-                continue;
-
-            // zerocoin spend that was sent to someone else
-            TransactionRecord sub(hash, nTime);
-            sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-            sub.debit = -txout.nValue;
-            sub.type = TransactionRecord::ZerocoinSpend;
-            sub.address = mapValue["zerocoinspend"];
-            if (strAddress != "")
-                sub.address = strAddress;
-            sub.idx = parts.size();
-            parts.append(sub);
-        }
-    } else if (nNet > 0 || wtx.IsCoinBase()) {
+    }  else if (nNet > 0 || wtx.IsCoinBase()) {
         //
         // Credit
         //
@@ -162,7 +82,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.credit = txout.nValue;
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                    // Received by FYD Address
+                    // Received by savenode Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {
@@ -223,7 +143,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.type = TransactionRecord::Obfuscated;
                 CTxDestination address;
                 if (ExtractDestination(wtx.vout[0].scriptPubKey, address)) {
-                    // Sent to FYD Address
+                    // Sent to savenode Address
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {
                     // Sent to IP, or other non-address transaction like OP_EVAL
@@ -246,7 +166,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             sub.credit = nCredit - nChange;
             parts.append(sub);
             parts.last().involvesWatchAddress = involvesWatchAddress; // maybe pass to TransactionRecord as constructor argument
-        } else if (fAllFromMe || wtx.IsZerocoinMint()) {
+        } else if (fAllFromMe) {
             //
             // Debit
             //
@@ -266,17 +186,12 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
 
                 CTxDestination address;
                 if (ExtractDestination(txout.scriptPubKey, address)) {
-                    //This is most likely only going to happen when resyncing deterministic wallet without the knowledge of the
-                    //private keys that the change was sent to. Do not display a "sent to" here.
-                    if (wtx.IsZerocoinMint())
-                        continue;
-                    // Sent to FYD Address
+                    // Sent to savenode Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else if (txout.IsZerocoinMint()){
                     sub.type = TransactionRecord::ZerocoinMint;
                     sub.address = mapValue["zerocoinmint"];
-                    sub.credit += txout.nValue;
                 } else {
                     // Sent to IP, or other non-address transaction like OP_EVAL
                     sub.type = TransactionRecord::SendToOther;
@@ -309,21 +224,6 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     return parts;
 }
 
-bool IsZFYDType(TransactionRecord::Type type)
-{
-    switch (type) {
-        case TransactionRecord::StakeZFYD:
-        case TransactionRecord::ZerocoinMint:
-        case TransactionRecord::ZerocoinSpend:
-        case TransactionRecord::RecvFromZerocoinSpend:
-        case TransactionRecord::ZerocoinSpend_Change_zFyd:
-        case TransactionRecord::ZerocoinSpend_FromMe:
-            return true;
-        default:
-            return false;
-    }
-}
-
 void TransactionRecord::updateStatus(const CWalletTx& wtx)
 {
     AssertLockHeld(cs_main);
@@ -341,13 +241,8 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
         (wtx.IsCoinBase() ? 1 : 0),
         wtx.nTimeReceived,
         idx);
-    //status.countsForBalance = wtx.IsTrusted() && !(wtx.GetBlocksToMaturity() > 0);
+    status.countsForBalance = wtx.IsTrusted() && !(wtx.GetBlocksToMaturity() > 0);
     status.depth = wtx.GetDepthInMainChain();
-
-    //Determine the depth of the block
-    int nBlocksToMaturity = wtx.GetBlocksToMaturity();
-
-    status.countsForBalance = wtx.IsTrusted() && !(nBlocksToMaturity > 0);
     status.cur_num_blocks = chainActive.Height();
     status.cur_num_ix_locks = nCompleteTXLocks;
 
@@ -361,12 +256,13 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
         }
     }
     // For generated transactions, determine maturity
-    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::StakeZFYD || type == TransactionRecord::MNReward) {
-        if (nBlocksToMaturity > 0) {
+    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::MNReward) {
+        if (wtx.GetBlocksToMaturity() > 0) {
             status.status = TransactionStatus::Immature;
-            status.matures_in = nBlocksToMaturity;
 
-            if (pindex && chainActive.Contains(pindex)) {
+            if (wtx.IsInMainChain()) {
+                status.matures_in = wtx.GetBlocksToMaturity();
+
                 // Check if the block was requested by anyone
                 if (GetAdjustedTime() - wtx.nTimeReceived > 2 * 60 && wtx.GetRequestCount() == 0)
                     status.status = TransactionStatus::MaturesWarning;
@@ -375,7 +271,6 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
             }
         } else {
             status.status = TransactionStatus::Confirmed;
-            status.matures_in = 0;
         }
     } else {
         if (status.depth < 0) {

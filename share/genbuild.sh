@@ -22,7 +22,7 @@ git_check_in_repo() {
     ! { git status --porcelain -uall --ignored "$@" 2>/dev/null || echo '??'; } | grep -q '?'
 }
 
-DESC="1.2.1"
+DESC="1.2.2"
 SUFFIX=""
 LAST_COMMIT_DATE=""
 if [ "${BITCOIN_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ] && git_check_in_repo share/genbuild.sh; then

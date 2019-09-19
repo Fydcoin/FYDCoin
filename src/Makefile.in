@@ -679,12 +679,13 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/transaction_conflicted.png \
 	qt/res/icons/tx_inout.png qt/res/icons/tx_input.png \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
-	qt/res/icons/unit_fyd.png qt/res/icons/unit_mfyd.png \
-	qt/res/icons/unit_fydd.png qt/res/icons/unit_tfyd.png \
-	qt/res/icons/unit_tmfyd.png qt/res/icons/unit_tfydd.png \
-	qt/res/icons/yesvote.png qt/res/icons/novote.png \
-	qt/res/icons/abstainvote.png qt/res/images/about.png \
-	qt/res/images/splash.png qt/res/images/splash_testnet.png \
+	qt/res/icons/tx_masternode.png qt/res/icons/unit_fyd.png \
+	qt/res/icons/unit_mfyd.png qt/res/icons/unit_fydd.png \
+	qt/res/icons/unit_tfyd.png qt/res/icons/unit_tmfyd.png \
+	qt/res/icons/unit_tfydd.png qt/res/icons/yesvote.png \
+	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
+	qt/res/images/about.png qt/res/images/splash.png \
+	qt/res/images/splash_testnet.png \
 	qt/res/images/splash_regtest.png \
 	qt/res/images/fyd_logo_horizontal.png \
 	qt/res/images/downArrow_dark.png \
@@ -2976,6 +2977,7 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/tx_input.png \
 @ENABLE_QT_TRUE@  qt/res/icons/tx_output.png \
 @ENABLE_QT_TRUE@  qt/res/icons/tx_mined.png \
+@ENABLE_QT_TRUE@  qt/res/icons/tx_masternode.png \
 @ENABLE_QT_TRUE@  qt/res/icons/unit_fyd.png \
 @ENABLE_QT_TRUE@  qt/res/icons/unit_mfyd.png \
 @ENABLE_QT_TRUE@  qt/res/icons/unit_fydd.png \

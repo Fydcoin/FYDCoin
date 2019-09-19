@@ -679,12 +679,13 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/transaction_conflicted.png \
 	qt/res/icons/tx_inout.png qt/res/icons/tx_input.png \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
-	qt/res/icons/unit_fyd.png qt/res/icons/unit_mfyd.png \
-	qt/res/icons/unit_fydd.png qt/res/icons/unit_tfyd.png \
-	qt/res/icons/unit_tmfyd.png qt/res/icons/unit_tfydd.png \
-	qt/res/icons/yesvote.png qt/res/icons/novote.png \
-	qt/res/icons/abstainvote.png qt/res/images/about.png \
-	qt/res/images/splash.png qt/res/images/splash_testnet.png \
+	qt/res/icons/tx_masternode.png qt/res/icons/unit_fyd.png \
+	qt/res/icons/unit_mfyd.png qt/res/icons/unit_fydd.png \
+	qt/res/icons/unit_tfyd.png qt/res/icons/unit_tmfyd.png \
+	qt/res/icons/unit_tfydd.png qt/res/icons/yesvote.png \
+	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
+	qt/res/images/about.png qt/res/images/splash.png \
+	qt/res/images/splash_testnet.png \
 	qt/res/images/splash_regtest.png \
 	qt/res/images/fyd_logo_horizontal.png \
 	qt/res/images/downArrow_dark.png \
@@ -1857,7 +1858,7 @@ CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 2
-CLIENT_VERSION_REVISION = 1
+CLIENT_VERSION_REVISION = 2
 COMPAT_LDFLAGS = 
 COPYRIGHT_YEAR = 2019
 CPP = gcc -E
@@ -1950,10 +1951,10 @@ OTOOL64 = :
 PACKAGE = fyd
 PACKAGE_BUGREPORT = www.fydcoin.com
 PACKAGE_NAME = FydCoin Core
-PACKAGE_STRING = FydCoin Core 1.2.1
+PACKAGE_STRING = FydCoin Core 1.2.2
 PACKAGE_TARNAME = fyd
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.2.1
+PACKAGE_VERSION = 1.2.2
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = 
@@ -2032,7 +2033,7 @@ USE_NUM_GMP =
 USE_NUM_OPENSSL = 
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.2.1
+VERSION = 1.2.2
 WARN_CXXFLAGS =  -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wrange-loop-analysis -Wredundant-decls
 WINDOWS_BITS = 
 WINDRES = 
@@ -2976,6 +2977,7 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/tx_masternode.png \
   qt/res/icons/unit_fyd.png \
   qt/res/icons/unit_mfyd.png \
   qt/res/icons/unit_fydd.png \

@@ -1731,7 +1731,7 @@ QWidget#GovernancePage .ProposalFrame > QLabel#strProposalURL {
 }
 
 QWidget#GovernancePage .QScrollArea, .QWidget#scrollAreaWidgetContents {
-    background-color:#fff;
+    background-color:#ffffff;
 }
 
 QWidget#GovernancePage .QGridLayout#proposalGrid {

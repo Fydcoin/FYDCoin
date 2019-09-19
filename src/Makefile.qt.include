@@ -266,6 +266,7 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/tx_masternode.png \
   qt/res/icons/unit_fyd.png \
   qt/res/icons/unit_mfyd.png \
   qt/res/icons/unit_fydd.png \
