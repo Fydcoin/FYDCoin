@@ -6,6 +6,7 @@ FYDCoin is an open source decentralized crypto-currency focused on fast transact
 
 Website: [fydcoin.com](https://www.fydcoin.com)
 Block Explorer: [explorer.fydcoin.com](http://explorer.fydcoin.com/)
+Backup Explorer: [Backup explorer](http://explorer.fydcoin.com/)
  
 ### FYDCoin Specs
 
