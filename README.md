@@ -212,7 +212,7 @@ P2P Port 37485
 <tr><td>Discord:</td><td>https://discord.gg/G4Kv4HR</td></tr>
 <tr><td>Telegram:</td><td>https://t.me/FYD_COIN</td></tr>
 <tr><td>Linkedin:</td><td>https://www.linkedin.com/in/fydcoin-blockchain-465067194/</td></tr>
-<tr><td>Twitter:</td><td>https://www.linkedin.com/in/fydcoin-blockchain-465067194/</td></tr>
+<tr><td>Twitter:</td><td>https://twitter.com/FydcoinO</td></tr>
 <tr><td>Medium:</td><td>https://medium.com/@fydcoin</td></tr>
 <tr><td>Telegram Turkey:</td><td>https://t.me/fydturkey</td></tr>
 <tr><td>Telegram Hispanico:</td><td>https://t.me/FYD_Hispanico</td></tr>
