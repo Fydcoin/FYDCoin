@@ -209,15 +209,27 @@ P2P Port 37485
 ### FYD Community
 
 <table>
-<tr><td>Discord:</td><td>https://discord.gg/zvyQ9jJ</td></tr>
-<tr><td>Twitter:</td><td>https://twitter.com/FydcoinO</td></tr>
+<tr><td>Discord:</td><td>https://discord.gg/G4Kv4HR</td></tr>
+<tr><td>Telegram:</td><td>https://t.me/FYD_COIN</td></tr>
+<tr><td>Linkedin:</td><td>https://t.me/FYD_COIN</td></tr>
+<tr><td>Twitter:</td><td>https://www.linkedin.com/in/fydcoin-blockchain-465067194/</td></tr>
 <tr><td>Medium:</td><td>https://medium.com/@fydcoin</td></tr>
+<tr><td>Telegram Turkey:</td><td>https://t.me/fydturkey</td></tr>
+<tr><td>Telegram Hispanico:</td><td>https://t.me/FYD_Hispanico</td></tr>
 </table>
 
 ### Exchanges
 
 <table>
-<tr><td>Crypto bridge:</td><td>https://wallet.crypto-bridge.org/market/BRIDGE.FYD_BRIDGE.BTC
+<tr><td>Crex24:</td><td>https://crex24.com/exchange/FYD-BTC
+</td></tr>
+</table>
+
+### FYD listing partners
+
+<table>
+<tr><td>Coinmarketcap:</td><td>https://coinmarketcap.com/currencies/find-your-developer/
+ <tr><td>Coinpaprika:</td><td>https://coinpaprika.com/coin/fyd-find-your-developer/
 </td></tr>
 </table>
 
