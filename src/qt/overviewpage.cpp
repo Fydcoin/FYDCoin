@@ -27,8 +27,8 @@
 #include <QTimer>
 
 #define DECORATION_SIZE 48
-#define ICON_OFFSET 16
-#define NUM_ITEMS 9
+#define ICON_OFFSET 14
+#define NUM_ITEMS 4
 
 extern CWallet* pwalletMain;
 
@@ -48,13 +48,15 @@ public:
         QRect mainRect = option.rect;
         mainRect.moveLeft(ICON_OFFSET);
         QRect decorationRect(mainRect.topLeft(), QSize(DECORATION_SIZE, DECORATION_SIZE));
-        int xspace = DECORATION_SIZE + 8;
+        int xspace =  -40;
         int ypad = 6;
         int halfheight = (mainRect.height() - 2 * ypad) / 2;
-        QRect amountRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace - ICON_OFFSET, halfheight);
-        QRect addressRect(mainRect.left() + xspace, mainRect.top() + ypad + halfheight, mainRect.width() - xspace, halfheight);
+        QRect amountRect(mainRect.left() + xspace , mainRect.top() + ypad, mainRect.width() - xspace - ICON_OFFSET, halfheight);
+        QRect addressRect(mainRect.left() + xspace , mainRect.top() + ypad + halfheight, mainRect.width() - xspace - ICON_OFFSET, halfheight);
         icon.paint(painter, decorationRect);
 
+
+        QString type = index.data(TransactionTableModel::TypeRole).toString();
         QDateTime date = index.data(TransactionTableModel::DateRole).toDateTime();
         QString address = index.data(Qt::DisplayRole).toString();
         qint64 amount = index.data(TransactionTableModel::AmountRole).toLongLong();
@@ -67,9 +69,16 @@ public:
             foreground = brush.color();
         }
 
-        painter->setPen(foreground);
+        painter->setPen(COLOR_STAKE);
         QRect boundingRect;
-        painter->drawText(addressRect, Qt::AlignLeft | Qt::AlignVCenter, address, &boundingRect);
+
+        if(address.size()>30){
+        address = address.leftJustified(15,'.',true);
+
+          address = address + "...)";
+
+      }
+        painter->drawText(addressRect, Qt::AlignCenter | Qt::AlignVCenter, address, &boundingRect);
 
         if (index.data(TransactionTableModel::WatchonlyRole).toBool()) {
             QIcon iconWatchonly = qvariant_cast<QIcon>(index.data(TransactionTableModel::WatchonlyDecorationRole));
@@ -77,18 +86,21 @@ public:
             iconWatchonly.paint(painter, watchonlyRect);
         }
 
-        if (amount < 0)
-            foreground = COLOR_NEGATIVE;
+        
+
+
 
         painter->setPen(foreground);
         QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true, BitcoinUnits::separatorAlways);
+        QString st = amountText.leftJustified(amountText.size()-10,'.',true);
+        st = st + " FYD ";
         if (!confirmed) {
             amountText = QString("[") + amountText + QString("]");
         }
-        painter->drawText(amountRect, Qt::AlignRight | Qt::AlignVCenter, amountText);
+        painter->drawText(amountRect, Qt::AlignRight | Qt::AlignVCenter, st);
 
         painter->setPen(COLOR_BLACK);
-        painter->drawText(amountRect, Qt::AlignLeft | Qt::AlignVCenter, GUIUtil::dateTimeStr(date));
+        painter->drawText(amountRect, Qt::AlignCenter | Qt::AlignVCenter, GUIUtil::dateTimeStr(date));
 
         painter->restore();
     }
@@ -119,7 +131,8 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentMasternodeEarnings(-1),
                                               currentStakeEarnings(-1),
                                               txdelegate(new TxViewDelegate()),
-                                              filter(0)
+                                              filter(0),
+                                              filter1(0)
 {
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
@@ -132,6 +145,14 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 
+    // Recent Rewards
+    ui->listRewards->setItemDelegate(txdelegate);
+    ui->listRewards->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
+    ui->listRewards->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
+    ui->listRewards->setAttribute(Qt::WA_MacShowFocusRect, false);
+
+    connect(ui->listRewards, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
+
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
@@ -142,8 +163,12 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
 void OverviewPage::handleTransactionClicked(const QModelIndex& index)
 {
-    if (filter)
+    if (filter){
         emit transactionClicked(filter->mapToSource(index));
+      }
+      if (filter1)
+          emit transactionClicked(filter1->mapToSource(index));
+
 }
 
 OverviewPage::~OverviewPage()
@@ -236,8 +261,8 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
     // Combined labels
-    ui->labelBalancez->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, availableTotalBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
+    //ui->labelBalancez->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, availableTotalBalance, false, BitcoinUnits::separatorAlways));
+    //ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Earnings labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, earnings, false, BitcoinUnits::separatorAlways));
@@ -261,8 +286,8 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool settingShowAllBalances = !settings.value("fHideZeroBalances").toBool();
 
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
-    ui->labelBalanceTextz->setVisible(showSumAvailable);
-    ui->labelBalancez->setVisible(showSumAvailable);
+    //ui->labelBalanceTextz->setVisible(showSumAvailable);
+    //ui->labelBalancez->setVisible(showSumAvailable);
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
@@ -295,10 +320,10 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setVisible(showWatchOnlyFYDLocked && showWatchOnly);
 
     // Masternode and Stake Earnings.
-    ui->labelStakeRewards->setVisible(false);
-    ui->labelStakeRewardsText->setVisible(false);
-    ui->labelMasternodeRewards->setVisible(false);
-    ui->labelMasternodeRewardsText->setVisible(false);
+    ui->labelStakeRewards->setVisible(true);
+    ui->labelStakeRewardsText->setVisible(true);
+    ui->labelMasternodeRewards->setVisible(true);
+    ui->labelMasternodeRewardsText->setVisible(true);
 
     // Percent split
     //bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
@@ -310,6 +335,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     if (cachedTxLocks != nCompleteTXLocks) {
         cachedTxLocks = nCompleteTXLocks;
         ui->listTransactions->update();
+        ui->listRewards->update();
     }
 }
 
@@ -355,10 +381,25 @@ void OverviewPage::setWalletModel(WalletModel* model)
         filter->setDynamicSortFilter(true);
         filter->setSortRole(Qt::EditRole);
         filter->setShowInactive(false);
+        filter->setTypeFilter(TransactionFilterProxy::TYPE(TransactionRecord::RecvWithAddress) | TransactionFilterProxy::TYPE(TransactionRecord::RecvFromOther) | TransactionFilterProxy::TYPE(TransactionRecord::SendToAddress) | TransactionFilterProxy::TYPE(TransactionRecord::SendToOther) | TransactionFilterProxy::TYPE(TransactionRecord::SendToSelf));
         filter->sort(TransactionTableModel::Date, Qt::DescendingOrder);
+
+        filter1 = new TransactionFilterProxy();
+        filter1->setSourceModel(model->getTransactionTableModel());
+        filter1->setLimit(NUM_ITEMS);
+        filter1->setDynamicSortFilter(true);
+        filter1->setSortRole(Qt::EditRole);
+        filter1->setShowInactive(false);
+        filter1->setTypeFilter(TransactionFilterProxy::TYPE(TransactionRecord::MNReward) | TransactionFilterProxy::TYPE(TransactionRecord::StakeMint) | TransactionFilterProxy::TYPE(TransactionRecord::StakeZFYD));
+
+
+        filter1->sort(TransactionTableModel::Date, Qt::DescendingOrder);
 
         ui->listTransactions->setModel(filter);
         ui->listTransactions->setModelColumn(TransactionTableModel::ToAddress);
+
+        ui->listRewards->setModel(filter1);
+        ui->listRewards->setModelColumn(TransactionTableModel::ToAddress);
 
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(),
@@ -397,6 +438,7 @@ void OverviewPage::updateDisplayUnit()
         txdelegate->unit = nDisplayUnit;
 
         ui->listTransactions->update();
+        ui->listRewards->update();
     }
 }
 

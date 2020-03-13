@@ -831,10 +831,9 @@ primitives/libbitcoin_common_a-deterministicmint.o: \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  primitives/deterministicmint.h
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h primitives/deterministicmint.h
 
 libzerocoin/Coin.h:
 
@@ -2552,10 +2551,12 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 primitives/deterministicmint.h:

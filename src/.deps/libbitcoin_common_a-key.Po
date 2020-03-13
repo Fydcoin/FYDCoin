@@ -717,11 +717,11 @@ libbitcoin_common_a-key.o: key.cpp key.h allocators.h support/cleanse.h \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  crypto/common.h crypto/hmac_sha512.h random.h \
-  secp256k1/include/secp256k1.h secp256k1/include/secp256k1_recovery.h
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h crypto/common.h \
+  crypto/hmac_sha512.h random.h secp256k1/include/secp256k1.h \
+  secp256k1/include/secp256k1_recovery.h
 
 key.h:
 
@@ -2199,11 +2199,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 crypto/common.h:
 

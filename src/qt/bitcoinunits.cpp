@@ -149,6 +149,7 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
     QString quotient_str = QString::number(quotient);
     QString remainder_str = QString::number(remainder).rightJustified(num_decimals, '0');
 
+
     // Use SI-style thin space separators as these are locale independent and can't be
     // confused with the decimal marker.
     QChar thin_sp(THIN_SP_CP);
@@ -159,7 +160,7 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
 
     if (n < 0)
         quotient_str.insert(0, '-');
-    else if (fPlus && n > 0)
+      else if (fPlus && n > 0)
         quotient_str.insert(0, '+');
 
     if (num_decimals <= 0)

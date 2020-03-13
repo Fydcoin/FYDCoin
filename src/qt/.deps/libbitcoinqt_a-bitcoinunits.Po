@@ -191,66 +191,67 @@ qt/libbitcoinqt_a-bitcoinunits.o: qt/bitcoinunits.cpp qt/bitcoinunits.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer \
   libzerocoin/Denominations.h libzerocoin/SpendType.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QAbstractListModel \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qabstractitemmodel.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QAbstractListModel \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/variant \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvector.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QString chainparams.h \
-  chainparamsbase.h checkpoints.h uint256.h primitives/block.h \
-  primitives/transaction.h script/script.h pubkey.h hash.h \
-  crypto/ripemd160.h crypto/sha256.h version.h crypto/sph_blake.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QString \
+  chainparams.h chainparamsbase.h checkpoints.h uint256.h \
+  primitives/block.h primitives/transaction.h script/script.h pubkey.h \
+  hash.h crypto/ripemd160.h crypto/sha256.h version.h crypto/sph_blake.h \
   crypto/sph_types.h crypto/sph_bmw.h crypto/sph_groestl.h \
   crypto/sph_jh.h crypto/sph_keccak.h crypto/sph_skein.h crypto/sha512.h \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
@@ -291,9 +292,9 @@ qt/libbitcoinqt_a-bitcoinunits.o: qt/bitcoinunits.cpp qt/bitcoinunits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream \
   keystore.h key.h allocators.h support/cleanse.h \
   /usr/local/include/boost/thread/mutex.hpp \
@@ -1124,9 +1125,9 @@ qt/libbitcoinqt_a-bitcoinunits.o: qt/bitcoinunits.cpp qt/bitcoinunits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/mman.h \
   libzerocoin/Params.h libzerocoin/bignum.h /usr/local/include/gmp.h \
   random.h libzerocoin/ZerocoinDefines.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QSettings \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsettings.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QStringList
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QSettings \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsettings.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QStringList
 
 qt/bitcoinunits.h:
 
@@ -1518,119 +1519,121 @@ libzerocoin/Denominations.h:
 
 libzerocoin/SpendType.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QAbstractListModel:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QAbstractListModel:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qabstractitemmodel.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qabstractitemmodel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
 
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/list:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/variant:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvector.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QString:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QString:
 
 chainparams.h:
 
@@ -1754,11 +1757,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:
 
@@ -3446,8 +3451,8 @@ random.h:
 
 libzerocoin/ZerocoinDefines.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QSettings:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QSettings:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsettings.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsettings.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QStringList:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QStringList:

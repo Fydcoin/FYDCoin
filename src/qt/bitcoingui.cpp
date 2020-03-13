@@ -73,6 +73,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             progressBar(0),
                                                                             progressDialog(0),
                                                                             appMenuBar(0),
+                                                                            spacer(0),
                                                                             overviewAction(0),
                                                                             historyAction(0),
                                                                             masternodeAction(0),
@@ -113,6 +114,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
 
+
     QString windowTitle = tr("FydCoin Core") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
@@ -135,6 +137,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     MacDockIconHandler::instance()->setIcon(networkStyle->getAppIcon());
 #endif
     setWindowTitle(windowTitle);
+    setWindowFlags( Qt::Window | Qt::CustomizeWindowHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint | Qt::WindowMinimizeButtonHint | Qt::WindowCloseButtonHint );
 
     rpcConsole = new RPCConsole(enableWallet ? this : 0);
 #ifdef ENABLE_WALLET
@@ -297,7 +300,10 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 {
     QActionGroup* tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Overview"), this);
+    spacer = new  QAction(QIcon(":/images/splash_regtest"),tr(""), this);
+    spacer->setCheckable(false);
+    tabGroup->addAction(spacer);
+    overviewAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
@@ -308,7 +314,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
+    sendCoinsAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
     sendCoinsAction->setStatusTip(tr("Send coins to a FYD address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
@@ -319,7 +325,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
+    receiveCoinsAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
     receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and fyd: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
@@ -330,7 +336,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
+    historyAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
     historyAction->setStatusTip(tr("Browse transaction history"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
@@ -342,7 +348,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(historyAction);
 
     if (Params().ZeroCoinEnabled()) {
-        privacyAction = new QAction(QIcon(":/icons/privacy"), tr("&Privacy"), this);
+        privacyAction = new QAction(QIcon(":/icons/privacy"), tr("  &Privacy"), this);
         privacyAction->setStatusTip(tr("Privacy Actions for zFYD"));
         privacyAction->setToolTip(privacyAction->statusTip());
         privacyAction->setCheckable(true);
@@ -357,7 +363,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
-        masternodeAction = new QAction(QIcon(":/icons/masternodes"), tr("&Masternodes"), this);
+        masternodeAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
         masternodeAction->setStatusTip(tr("Browse masternodes"));
         masternodeAction->setToolTip(masternodeAction->statusTip());
         masternodeAction->setCheckable(true);
@@ -371,8 +377,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
         connect(masternodeAction, SIGNAL(triggered()), this, SLOT(gotoMasternodePage()));
     }
 
-    if (Params().ZeroCoinEnabled()) {
-        governanceAction = new QAction(QIcon(":/icons/governance"), tr("&Governance"), this);
+    if (!Params().ZeroCoinEnabled()) {
+        governanceAction = new QAction(QIcon(":/images/splash_regtest"), tr(""), this);
         governanceAction->setStatusTip(tr("Show Proposals"));
         governanceAction->setToolTip(governanceAction->statusTip());
         governanceAction->setCheckable(true);
@@ -392,13 +398,16 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(gotoSendCoinsPage()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
+    connect(governanceAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(governanceAction, SIGNAL(triggered()), this, SLOT(gotoGovernancePage()));
     if (Params().ZeroCoinEnabled()) {
         connect(privacyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
         connect(privacyAction, SIGNAL(triggered()), this, SLOT(gotoPrivacyPage()));
     }
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
-    if (Params().ZeroCoinEnabled()) {
+    if (!Params().ZeroCoinEnabled()) {
+      connect(governanceAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
         connect(governanceAction, SIGNAL(triggered()), this, SLOT(gotoGovernancePage()));
     }
 #endif // ENABLE_WALLET
@@ -570,32 +579,38 @@ void BitcoinGUI::createToolBars()
     if (walletFrame) {
         QToolBar* toolbar = new QToolBar(tr("Tabs toolbar"));
         toolbar->setObjectName("Main-Toolbar"); // Name for CSS addressing
-        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 //        // Add some empty space at the top of the toolbars
-//        QAction* spacer = new QAction(this);
-//        toolbar->addAction(spacer);
-//        toolbar->widgetForAction(spacer)->setObjectName("ToolbarSpacer");
+
+        toolbar->addAction(spacer);
+        toolbar->widgetForAction(spacer)->setObjectName("spacer");
 
         toolbar->addAction(overviewAction);
+        toolbar->widgetForAction(overviewAction)->setObjectName("overviewAction");
         toolbar->addAction(sendCoinsAction);
+        toolbar->widgetForAction(sendCoinsAction)->setObjectName("sendCoinsAction");
         toolbar->addAction(receiveCoinsAction);
+        toolbar->widgetForAction(receiveCoinsAction)->setObjectName("receiveCoinsAction");
         if (Params().ZeroCoinEnabled()) {
             toolbar->addAction(privacyAction);
         }
         toolbar->addAction(historyAction);
+        toolbar->widgetForAction(historyAction)->setObjectName("historyAction");
         if (Params().ZeroCoinEnabled()) {
             toolbar->addAction(privacyAction);
         }
         QSettings settings;
         if (settings.value("fShowMasternodesTab").toBool()) {
             toolbar->addAction(masternodeAction);
+            toolbar->widgetForAction(masternodeAction)->setObjectName("masternodeAction");
         }
-        if (Params().ZeroCoinEnabled()) {
-            toolbar->addAction(governanceAction);
+        if (!Params().ZeroCoinEnabled()) {
+            //toolbar->addAction(governanceAction);
+            //toolbar->widgetForAction(governanceAction)->setObjectName("governanceAction");
         }
         toolbar->setMovable(false); // remove unused icon in upper left corner
         toolbar->setOrientation(Qt::Vertical);
-        toolbar->setIconSize(QSize(40,40));
+        toolbar->setIconSize(QSize(30,30));
         overviewAction->setChecked(true);
 
         /** Create additional container for toolbar and walletFrame and make it the central widget.
@@ -689,6 +704,7 @@ void BitcoinGUI::removeAllWallets()
 void BitcoinGUI::setWalletActionsEnabled(bool enabled)
 {
     overviewAction->setEnabled(enabled);
+
     sendCoinsAction->setEnabled(enabled);
     receiveCoinsAction->setEnabled(enabled);
     if (Params().ZeroCoinEnabled()) {
@@ -700,6 +716,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
         masternodeAction->setEnabled(enabled);
     }
     encryptWalletAction->setEnabled(enabled);
+    governanceAction->setEnabled(enabled);
     backupWalletAction->setEnabled(enabled);
     changePassphraseAction->setEnabled(enabled);
     signMessageAction->setEnabled(enabled);
@@ -845,7 +862,7 @@ void BitcoinGUI::gotoMasternodePage()
 
 void BitcoinGUI::gotoGovernancePage()
 {
-    if (Params().ZeroCoinEnabled()) {
+    if (!Params().ZeroCoinEnabled()) {
         governanceAction->setChecked(true);
         if (walletFrame) walletFrame->gotoGovernancePage();
     }

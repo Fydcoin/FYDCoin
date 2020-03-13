@@ -718,10 +718,9 @@ libbitcoin_wallet_a-crypter.o: crypter.cpp crypter.h allocators.h \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  sync.h threadsafety.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h sync.h threadsafety.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/thread \
   /usr/local/include/boost/signals2/signal.hpp \
@@ -1111,24 +1110,25 @@ libbitcoin_wallet_a-crypter.o: crypter.cpp crypter.h allocators.h \
   /usr/local/include/boost/range/rbegin.hpp \
   /usr/local/include/boost/type_traits/is_abstract.hpp \
   /usr/local/include/boost/foreach_fwd.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h wallet.h \
-  base58.h chainparams.h chainparamsbase.h checkpoints.h \
-  primitives/block.h protocol.h netbase.h libzerocoin/Params.h \
-  libzerocoin/bignum.h /usr/local/include/gmp.h random.h \
-  libzerocoin/ZerocoinDefines.h kernel.h main.h chain.h pow.h coins.h \
-  compressor.h undo.h /usr/local/include/boost/unordered_map.hpp \
+  /usr/local/include/openssl/aes.h /usr/local/include/openssl/evp.h \
+  /usr/local/include/openssl/ossl_typ.h \
+  /usr/local/include/openssl/symhacks.h /usr/local/include/openssl/bio.h \
+  /usr/local/include/openssl/crypto.h \
+  /usr/local/include/openssl/safestack.h \
+  /usr/local/include/openssl/stack.h \
+  /usr/local/include/openssl/cryptoerr.h \
+  /usr/local/include/openssl/bioerr.h \
+  /usr/local/include/openssl/evperr.h \
+  /usr/local/include/openssl/objects.h \
+  /usr/local/include/openssl/obj_mac.h /usr/local/include/openssl/asn1.h \
+  /usr/local/include/openssl/asn1err.h /usr/local/include/openssl/bn.h \
+  /usr/local/include/openssl/bnerr.h \
+  /usr/local/include/openssl/objectserr.h wallet.h base58.h \
+  chainparams.h chainparamsbase.h checkpoints.h primitives/block.h \
+  protocol.h netbase.h libzerocoin/Params.h libzerocoin/bignum.h \
+  /usr/local/include/gmp.h random.h libzerocoin/ZerocoinDefines.h \
+  kernel.h main.h chain.h pow.h coins.h compressor.h undo.h \
+  /usr/local/include/boost/unordered_map.hpp \
   /usr/local/include/boost/unordered/unordered_map.hpp \
   /usr/local/include/boost/unordered/unordered_map_fwd.hpp \
   /usr/local/include/boost/unordered/detail/fwd.hpp \
@@ -2714,11 +2714,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 sync.h:
 
@@ -3522,31 +3524,41 @@ init.h:
 
 /usr/local/include/boost/foreach_fwd.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h:
+/usr/local/include/openssl/aes.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h:
+/usr/local/include/openssl/evp.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h:
+/usr/local/include/openssl/ossl_typ.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h:
+/usr/local/include/openssl/symhacks.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h:
+/usr/local/include/openssl/bio.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h:
+/usr/local/include/openssl/crypto.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h:
+/usr/local/include/openssl/safestack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h:
+/usr/local/include/openssl/stack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h:
+/usr/local/include/openssl/cryptoerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h:
+/usr/local/include/openssl/bioerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h:
+/usr/local/include/openssl/evperr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h:
+/usr/local/include/openssl/objects.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h:
+/usr/local/include/openssl/obj_mac.h:
+
+/usr/local/include/openssl/asn1.h:
+
+/usr/local/include/openssl/asn1err.h:
+
+/usr/local/include/openssl/bn.h:
+
+/usr/local/include/openssl/bnerr.h:
+
+/usr/local/include/openssl/objectserr.h:
 
 wallet.h:
 

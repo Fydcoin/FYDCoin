@@ -683,9 +683,20 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/unit_mfyd.png qt/res/icons/unit_fydd.png \
 	qt/res/icons/unit_tfyd.png qt/res/icons/unit_tmfyd.png \
 	qt/res/icons/unit_tfydd.png qt/res/icons/yesvote.png \
-	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
-	qt/res/images/about.png qt/res/images/splash.png \
-	qt/res/images/splash_testnet.png \
+	qt/res/icons/novote.png qt/res/icons/masternodes_hoover.png \
+	qt/res/icons/masternodes_on.png qt/res/icons/masternodesb.png \
+	qt/res/icons/governance_on.png qt/res/icons/governanceb.png \
+	qt/res/icons/governance_hoover.png \
+	qt/res/icons/dashboard_hoover.png \
+	qt/res/icons/dashboard_on.png qt/res/icons/dashboard.png \
+	qt/res/icons/transactions_on.png \
+	qt/res/icons/transactionsb.png \
+	qt/res/icons/transactions_hoover.png \
+	qt/res/icons/receive_hoover.png qt/res/icons/receive_on.png \
+	qt/res/icons/receiveb.png qt/res/icons/send_hoover.png \
+	qt/res/icons/send_on.png qt/res/icons/sendb.png \
+	qt/res/icons/abstainvote.png qt/res/images/about.png \
+	qt/res/images/splash.png qt/res/images/splash_testnet.png \
 	qt/res/images/splash_regtest.png \
 	qt/res/images/fyd_logo_horizontal.png \
 	qt/res/images/downArrow_dark.png \
@@ -696,6 +707,8 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/images/leftArrow_small_dark.png \
 	qt/res/images/rightArrow_small_dark.png \
 	qt/res/images/qtreeview_selected.png \
+	qt/res/images/balanceImage.png qt/res/images/rewardsImage.png \
+	qt/res/images/transactionList.png \
 	qt/res/images/walletFrame.png qt/res/images/walletFrame_bg.png \
 	qt/res/css/default.css $(wildcard \
 	$(srcdir)/qt/res/movies/spinner-*.png)
@@ -2986,6 +2999,24 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/unit_tfydd.png \
 @ENABLE_QT_TRUE@  qt/res/icons/yesvote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/novote.png \
+@ENABLE_QT_TRUE@  qt/res/icons/masternodes_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/masternodes_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/masternodesb.png \
+@ENABLE_QT_TRUE@  qt/res/icons/governance_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/governanceb.png \
+@ENABLE_QT_TRUE@  qt/res/icons/governance_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/dashboard_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/dashboard_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/dashboard.png \
+@ENABLE_QT_TRUE@  qt/res/icons/transactions_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/transactionsb.png \
+@ENABLE_QT_TRUE@  qt/res/icons/transactions_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/receive_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/receive_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/receiveb.png \
+@ENABLE_QT_TRUE@  qt/res/icons/send_hoover.png \
+@ENABLE_QT_TRUE@  qt/res/icons/send_on.png \
+@ENABLE_QT_TRUE@  qt/res/icons/sendb.png \
 @ENABLE_QT_TRUE@  qt/res/icons/abstainvote.png
 
 @ENABLE_QT_TRUE@BITCOIN_QT_BASE_CPP = \
@@ -3068,6 +3099,9 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/images/leftArrow_small_dark.png \
 @ENABLE_QT_TRUE@  qt/res/images/rightArrow_small_dark.png \
 @ENABLE_QT_TRUE@  qt/res/images/qtreeview_selected.png \
+@ENABLE_QT_TRUE@  qt/res/images/balanceImage.png \
+@ENABLE_QT_TRUE@	qt/res/images/rewardsImage.png \
+@ENABLE_QT_TRUE@	qt/res/images/transactionList.png \
 @ENABLE_QT_TRUE@  qt/res/images/walletFrame.png \
 @ENABLE_QT_TRUE@  qt/res/images/walletFrame_bg.png \
 @ENABLE_QT_TRUE@  qt/res/images/walletFrame_bg.png

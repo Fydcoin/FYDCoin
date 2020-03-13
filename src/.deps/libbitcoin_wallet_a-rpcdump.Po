@@ -234,9 +234,9 @@ libbitcoin_wallet_a-rpcdump.o: rpcdump.cpp bip38.h pubkey.h hash.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream init.h \
   main.h config/fyd-config.h amount.h chain.h pow.h primitives/block.h \
   primitives/transaction.h script/script.h \
@@ -1460,7 +1460,7 @@ libbitcoin_wallet_a-rpcdump.o: rpcdump.cpp bip38.h pubkey.h hash.h \
   /usr/local/include/boost/date_time/posix_time/posix_time_io.hpp \
   /usr/local/include/boost/date_time/time_facet.hpp \
   /usr/local/include/boost/date_time/posix_time/time_parsers.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h
+  /usr/local/include/openssl/aes.h
 
 bip38.h:
 
@@ -1962,11 +1962,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:
 
@@ -4528,4 +4530,4 @@ secp256k1/include/secp256k1.h:
 
 /usr/local/include/boost/date_time/posix_time/time_parsers.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h:
+/usr/local/include/openssl/aes.h:

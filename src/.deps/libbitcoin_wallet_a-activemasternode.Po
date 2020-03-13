@@ -719,11 +719,11 @@ libbitcoin_wallet_a-activemasternode.o: activemasternode.cpp \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  masternode.h base58.h chainparams.h chainparamsbase.h checkpoints.h \
-  primitives/block.h primitives/transaction.h amount.h script/script.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h masternode.h base58.h \
+  chainparams.h chainparamsbase.h checkpoints.h primitives/block.h \
+  primitives/transaction.h amount.h script/script.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/list keystore.h \
   sync.h threadsafety.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/condition_variable \
@@ -2712,11 +2712,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 masternode.h:
 

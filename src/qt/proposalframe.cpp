@@ -21,7 +21,7 @@
 
 ProposalFrame::ProposalFrame(QWidget* parent) : QFrame(parent)
 {
-    extended = false;
+    extended = true;
 }
 
 ProposalFrame::~ProposalFrame()

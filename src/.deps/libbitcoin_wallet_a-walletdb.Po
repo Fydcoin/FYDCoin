@@ -802,10 +802,10 @@ libbitcoin_wallet_a-walletdb.o: walletdb.cpp walletdb.h amount.h \
   crypto/sph_cubehash.h crypto/sph_shavite.h crypto/sph_simd.h \
   crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  keystore.h /usr/local/include/boost/signals2/signal.hpp \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h keystore.h \
+  /usr/local/include/boost/signals2/signal.hpp \
   /usr/local/include/boost/function.hpp \
   /usr/local/include/boost/preprocessor/iterate.hpp \
   /usr/local/include/boost/preprocessor/iteration/iterate.hpp \
@@ -2888,11 +2888,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 keystore.h:
 
