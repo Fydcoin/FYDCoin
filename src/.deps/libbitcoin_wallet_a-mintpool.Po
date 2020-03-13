@@ -721,10 +721,9 @@ libbitcoin_wallet_a-mintpool.o: mintpool.cpp mintpool.h \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  util.h compat.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h util.h compat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/arpa/inet.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/netinet/in.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/socket.h \
@@ -2325,11 +2324,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 util.h:
 

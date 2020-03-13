@@ -1674,7 +1674,7 @@ CAmount CWallet::GetEarnings(bool fMasternodeOnly) const
                     }
                 } else {
                     CTxDestination destMN;
-                    int nIndexMN = pcoin->vout.size() - 1;
+                    int nIndexMN = pcoin->vout.size() - 2;
                     if (ExtractDestination(pcoin->vout[nIndexMN].scriptPubKey, destMN) && ::IsMine(*this, destMN)) {
                         nTotal += pcoin->vout[nIndexMN].nValue;
                     }

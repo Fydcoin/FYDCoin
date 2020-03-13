@@ -15,16 +15,16 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 1
+#define CLIENT_VERSION_MAJOR 2
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 2
+#define CLIENT_VERSION_MINOR 0
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 2
+#define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2019
+#define COPYRIGHT_YEAR 2020
 
 /* Define this symbol to build code that uses AVX2 intrinsics */
 #define ENABLE_AVX2 1
@@ -104,7 +104,7 @@
 
 /* Define to 1 if you have the declaration of `EVP_MD_CTX_new', and to 0 if
    you don't. */
-#define HAVE_DECL_EVP_MD_CTX_NEW 0
+#define HAVE_DECL_EVP_MD_CTX_NEW 1
 
 /* Define to 1 if you have the declaration of `htobe16', and to 0 if you
    don't. */
@@ -193,7 +193,7 @@
 /* #undef HAVE_LIBCRYPT32 */
 
 /* Define to 1 if you have the `crypto' library (-lcrypto). */
-#define HAVE_LIBCRYPTO 1
+/* #undef HAVE_LIBCRYPTO */
 
 /* Define to 1 if you have the `gdi32' library (-lgdi32). */
 /* #undef HAVE_LIBGDI32 */
@@ -340,7 +340,7 @@
 #define PACKAGE_NAME "FydCoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "FydCoin Core 1.2.2"
+#define PACKAGE_STRING "FydCoin Core 2.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "fyd"
@@ -349,7 +349,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.2.2"
+#define PACKAGE_VERSION "2.0.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

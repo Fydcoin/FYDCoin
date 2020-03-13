@@ -832,12 +832,12 @@ libbitcoin_server_a-init.o: init.cpp config/fyd-config.h init.h \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  primitives/zerocoin.h accumulatormap.h chain.h pow.h \
-  primitives/block.h primitives/transaction.h script/script.h keystore.h \
-  sync.h threadsafety.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h primitives/zerocoin.h \
+  accumulatormap.h chain.h pow.h primitives/block.h \
+  primitives/transaction.h script/script.h keystore.h sync.h \
+  threadsafety.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/thread \
   /usr/local/include/boost/signals2/signal.hpp \
@@ -1342,13 +1342,12 @@ libbitcoin_server_a-init.o: init.cpp config/fyd-config.h init.h \
   /usr/local/include/boost/interprocess/sync/detail/common_algorithms.hpp \
   /usr/local/include/boost/interprocess/sync/spin/wait.hpp \
   /usr/local/include/boost/interprocess/sync/detail/locks.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h \
-  zmq/zmqnotificationinterface.h
+  /usr/local/include/openssl/crypto.h \
+  /usr/local/include/openssl/safestack.h \
+  /usr/local/include/openssl/stack.h \
+  /usr/local/include/openssl/ossl_typ.h \
+  /usr/local/include/openssl/cryptoerr.h \
+  /usr/local/include/openssl/symhacks.h zmq/zmqnotificationinterface.h
 
 config/fyd-config.h:
 
@@ -3076,11 +3075,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 primitives/zerocoin.h:
 
@@ -4224,16 +4225,16 @@ zfydchain.h:
 
 /usr/local/include/boost/interprocess/sync/detail/locks.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h:
+/usr/local/include/openssl/crypto.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h:
+/usr/local/include/openssl/safestack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h:
+/usr/local/include/openssl/stack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h:
+/usr/local/include/openssl/ossl_typ.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h:
+/usr/local/include/openssl/cryptoerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h:
+/usr/local/include/openssl/symhacks.h:
 
 zmq/zmqnotificationinterface.h:

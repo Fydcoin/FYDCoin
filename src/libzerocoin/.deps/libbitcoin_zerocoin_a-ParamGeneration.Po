@@ -239,9 +239,9 @@ libzerocoin/libbitcoin_zerocoin_a-ParamGeneration.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
-  /usr/local/opt/openssl/include/openssl/sha.h \
-  /usr/local/opt/openssl/include/openssl/e_os2.h \
-  /usr/local/opt/openssl/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream
 
 libzerocoin/ParamGeneration.h:
@@ -760,10 +760,12 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/usr/local/opt/openssl/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/opt/openssl/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/opt/openssl/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:

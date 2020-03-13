@@ -713,7 +713,8 @@ crypto/libbitcoin_crypto_a-scrypt.o: crypto/scrypt.cpp crypto/scrypt.h \
   /usr/local/include/boost/atomic/detail/casts.hpp \
   /usr/local/opt/openssl/include/openssl/sha.h \
   /usr/local/opt/openssl/include/openssl/e_os2.h \
-  /usr/local/opt/openssl/include/openssl/opensslconf.h
+  /usr/local/opt/openssl/include/openssl/opensslconf.h \
+  /usr/local/opt/openssl/include/openssl/opensslv.h
 
 crypto/scrypt.h:
 
@@ -2152,3 +2153,5 @@ support/cleanse.h:
 /usr/local/opt/openssl/include/openssl/e_os2.h:
 
 /usr/local/opt/openssl/include/openssl/opensslconf.h:
+
+/usr/local/opt/openssl/include/openssl/opensslv.h:

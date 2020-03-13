@@ -832,10 +832,10 @@ libzerocoin/libbitcoin_zerocoin_a-SerialNumberSignatureOfKnowledge.o: \
   crypto/sph_luffa.h crypto/sph_cubehash.h crypto/sph_shavite.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
-  /usr/local/opt/openssl/include/openssl/sha.h \
-  /usr/local/opt/openssl/include/openssl/e_os2.h \
-  /usr/local/opt/openssl/include/openssl/opensslconf.h \
-  libzerocoin/Commitment.h libzerocoin/Accumulator.h
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h libzerocoin/Commitment.h \
+  libzerocoin/Accumulator.h
 
 streams.h:
 
@@ -2557,11 +2557,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip:
 
-/usr/local/opt/openssl/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/opt/openssl/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/opt/openssl/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 libzerocoin/Commitment.h:
 

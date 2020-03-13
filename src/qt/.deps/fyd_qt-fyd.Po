@@ -191,148 +191,150 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer \
   libzerocoin/Denominations.h libzerocoin/SpendType.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QLabel \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qlabel.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtwidgetsglobal.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtguiglobal.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QLabel \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtgui-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtwidgets-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qframe.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qwidget.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qwindowdefs.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtgui-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qwidget.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmargins.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpaintdevice.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qrect.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsize.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qpoint.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpalette.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qcolor.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qrgb.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qrgba64.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qbrush.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvector.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qmatrix.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpolygon.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qregion.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qdatastream.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qiodevice.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qline.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtransform.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpainterpath.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qimage.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpixelformat.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qpixmap.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsharedpointer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qshareddata.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsharedpointer_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qfont.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qfontmetrics.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qfontinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsizepolicy.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qcursor.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qkeysequence.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMainWindow \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmainwindow.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtabwidget.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qicon.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QMap \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMenu \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmenu.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qaction.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmargins.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrect.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsize.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpoint.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpalette.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qcolor.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qrgb.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qrgba64.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qbrush.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qmatrix.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpolygon.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qregion.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdatastream.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiodevice.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qline.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtransform.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpainterpath.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qimage.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpixelformat.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpixmap.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qshareddata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfont.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfontmetrics.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfontinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsizepolicy.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qcursor.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qkeysequence.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QMap \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMenu \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmenu.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qaction.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/variant \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qactiongroup.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QPoint \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QPushButton \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qpushbutton.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractbutton.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QSystemTrayIcon \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsystemtrayicon.h \
-  qt/clientmodel.h /usr/local/Cellar/qt/5.11.1/include/QtCore/QObject \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QDateTime \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qdatetime.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qactiongroup.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QPoint \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QPushButton \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QSystemTrayIcon \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsystemtrayicon.h \
+  qt/clientmodel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QObject \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QDateTime \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdatetime.h \
   qt/guiconstants.h qt/guiutil.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QEvent \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcoreevent.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QHeaderView \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qheaderview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractitemview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractscrollarea.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qabstractitemmodel.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qitemselectionmodel.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qset.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractitemdelegate.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qstyleoption.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlocale.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractspinbox.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qvalidator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregularexpression.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qslider.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractslider.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qstyle.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtabbar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qrubberband.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMessageBox \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmessagebox.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qdialog.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QProgressBar \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qprogressbar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QString \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QTableView \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtableview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QTableWidget \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtablewidget.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QEvent \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcoreevent.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QHeaderView \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qheaderview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qitemselectionmodel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qset.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlocale.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qvalidator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregularexpression.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qslider.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qstyle.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qrubberband.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMessageBox \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QProgressBar \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qprogressbar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QString \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QTableView \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtableview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QTableWidget \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtablewidget.h \
   /usr/local/include/boost/filesystem.hpp \
   /usr/local/include/boost/filesystem/config.hpp \
   /usr/local/include/boost/config.hpp \
@@ -768,10 +770,10 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/deque \
   /usr/local/include/boost/filesystem/convenience.hpp qt/intro.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QDialog \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QMutex \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QThread \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qthread.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QDialog \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QMutex \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QThread \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qthread.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/future \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/thread net.h \
   bloom.h libzerocoin/bignum.h /usr/local/include/gmp.h uint256.h \
@@ -808,9 +810,9 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   crypto/sph_simd.h crypto/sph_echo.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/istream \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream \
   limitedmap.h mruset.h netbase.h protocol.h streams.h allocators.h \
   support/cleanse.h /usr/local/include/boost/thread/mutex.hpp \
@@ -1243,62 +1245,70 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   /usr/local/include/boost/signals2/detail/variadic_slot_invoker.hpp \
   /usr/local/include/boost/type_traits/function_traits.hpp \
   /usr/local/include/boost/signals2/detail/signal_template.hpp \
-  qt/networkstyle.h /usr/local/Cellar/qt/5.11.1/include/QtGui/QIcon \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/QPixmap qt/optionsmodel.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QAbstractListModel \
+  qt/networkstyle.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QIcon \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QPixmap \
+  qt/optionsmodel.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QAbstractListModel \
   qt/splashscreen.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QSplashScreen \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsplashscreen.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QSplashScreen \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsplashscreen.h \
   qt/utilitydialog.h qt/winshutdownmonitor.h qt/paymentserver.h \
   qt/paymentrequestplus.h qt/paymentrequest.pb.h \
-  /usr/local/include/google/protobuf/stubs/common.h \
-  /usr/local/include/google/protobuf/stubs/port.h \
-  /usr/local/include/google/protobuf/stubs/platform_macros.h \
+  /usr/local/include/google/protobuf/port_def.inc \
+  /usr/local/include/google/protobuf/port_undef.inc \
+  /usr/local/include/google/protobuf/io/coded_stream.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/param.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/param.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/param.h \
+  /usr/local/include/google/protobuf/stubs/common.h \
+  /usr/local/include/google/protobuf/stubs/port.h \
+  /usr/local/include/google/protobuf/stubs/platform_macros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/i386/OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_os_inline.h \
   /usr/local/include/google/protobuf/stubs/macros.h \
   /usr/local/include/google/protobuf/stubs/logging.h \
-  /usr/local/include/google/protobuf/stubs/scoped_ptr.h \
-  /usr/local/include/google/protobuf/stubs/mutex.h \
-  /usr/local/include/google/protobuf/stubs/callback.h \
-  /usr/local/include/google/protobuf/stubs/type_traits.h \
-  /usr/local/include/google/protobuf/stubs/template_util.h \
-  /usr/local/include/google/protobuf/io/coded_stream.h \
-  /usr/local/include/google/protobuf/stubs/atomicops.h \
-  /usr/local/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h \
+  /usr/local/include/google/protobuf/stubs/strutil.h \
+  /usr/local/include/google/protobuf/stubs/stringpiece.h \
+  /usr/local/include/google/protobuf/stubs/hash.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_map \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_set \
+  /usr/local/include/google/protobuf/port.h \
   /usr/local/include/google/protobuf/arena.h \
   /usr/local/include/google/protobuf/arena_impl.h \
-  /usr/local/include/google/protobuf/stubs/atomic_sequence_num.h \
   /usr/local/include/google/protobuf/arenastring.h \
   /usr/local/include/google/protobuf/stubs/fastmem.h \
   /usr/local/include/google/protobuf/generated_message_table_driven.h \
   /usr/local/include/google/protobuf/map.h \
   /usr/local/include/google/protobuf/generated_enum_util.h \
-  /usr/local/include/google/protobuf/map_type_handler.h \
-  /usr/local/include/google/protobuf/wire_format_lite_inl.h \
   /usr/local/include/google/protobuf/message_lite.h \
   /usr/local/include/google/protobuf/stubs/once.h \
+  /usr/local/include/google/protobuf/map_type_handler.h \
+  /usr/local/include/google/protobuf/parse_context.h \
+  /usr/local/include/google/protobuf/io/zero_copy_stream.h \
+  /usr/local/include/google/protobuf/implicit_weak_message.h \
   /usr/local/include/google/protobuf/repeated_field.h \
   /usr/local/include/google/protobuf/stubs/casts.h \
+  /usr/local/include/google/protobuf/metadata_lite.h \
+  /usr/local/include/google/protobuf/generated_message_util.h \
+  /usr/local/include/google/protobuf/any.h \
+  /usr/local/include/google/protobuf/has_bits.h \
   /usr/local/include/google/protobuf/wire_format_lite.h \
-  /usr/local/include/google/protobuf/stubs/hash.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_map \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_set \
   /usr/local/include/google/protobuf/map_entry_lite.h \
   /usr/local/include/google/protobuf/map_field_lite.h \
-  /usr/local/include/google/protobuf/generated_message_util.h \
-  /usr/local/include/google/protobuf/has_bits.h \
+  /usr/local/include/google/protobuf/inlined_string_field.h \
   /usr/local/include/google/protobuf/metadata.h \
-  /usr/local/include/google/protobuf/metadata_lite.h \
   /usr/local/include/google/protobuf/unknown_field_set.h \
-  /usr/local/include/google/protobuf/message.h \
+  /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+  /usr/local/include/google/protobuf/stubs/callback.h \
+  /usr/local/include/google/protobuf/stubs/stl_util.h \
+  /usr/local/include/google/protobuf/generated_message_reflection.h \
   /usr/local/include/google/protobuf/descriptor.h \
-  /usr/local/include/google/protobuf/stubs/shared_ptr.h \
+  /usr/local/include/google/protobuf/stubs/mutex.h \
+  /usr/local/include/google/protobuf/generated_enum_reflection.h \
+  /usr/local/include/google/protobuf/message.h \
   /usr/local/include/google/protobuf/extension_set.h base58.h \
   chainparams.h chainparamsbase.h checkpoints.h primitives/block.h \
   primitives/transaction.h script/script.h pubkey.h keystore.h key.h \
@@ -1314,37 +1324,33 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   /usr/local/include/boost/variant/get.hpp \
   /usr/local/include/boost/variant/visitor_ptr.hpp \
   /usr/local/include/boost/variant/bad_visit.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/x509.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ec.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ecdsa.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ecdh.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/rsa.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/dsa.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/dh.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/x509_vfy.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/lhash.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/pkcs7.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QByteArray \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/QList \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qevent.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qurl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qfile.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qfiledevice.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qvector2d.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtouchdevice.h \
+  /usr/local/include/openssl/x509.h \
+  /usr/local/include/openssl/ossl_typ.h \
+  /usr/local/include/openssl/symhacks.h \
+  /usr/local/include/openssl/buffer.h \
+  /usr/local/include/openssl/crypto.h \
+  /usr/local/include/openssl/safestack.h \
+  /usr/local/include/openssl/stack.h \
+  /usr/local/include/openssl/cryptoerr.h \
+  /usr/local/include/openssl/buffererr.h \
+  /usr/local/include/openssl/evp.h /usr/local/include/openssl/bio.h \
+  /usr/local/include/openssl/bioerr.h \
+  /usr/local/include/openssl/evperr.h \
+  /usr/local/include/openssl/objects.h \
+  /usr/local/include/openssl/obj_mac.h /usr/local/include/openssl/asn1.h \
+  /usr/local/include/openssl/asn1err.h /usr/local/include/openssl/bn.h \
+  /usr/local/include/openssl/bnerr.h \
+  /usr/local/include/openssl/objectserr.h \
+  /usr/local/include/openssl/ec.h /usr/local/include/openssl/ecerr.h \
+  /usr/local/include/openssl/rsa.h /usr/local/include/openssl/rsaerr.h \
+  /usr/local/include/openssl/dsa.h /usr/local/include/openssl/dh.h \
+  /usr/local/include/openssl/dherr.h /usr/local/include/openssl/dsaerr.h \
+  /usr/local/include/openssl/x509err.h \
+  /usr/local/include/openssl/x509_vfy.h \
+  /usr/local/include/openssl/lhash.h /usr/local/include/openssl/pkcs7.h \
+  /usr/local/include/openssl/pkcs7err.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QByteArray \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QList \
   qt/walletmodel.h qt/askpassphrasedialog.h qt/walletmodeltransaction.h \
   swifttx.h main.h chain.h pow.h tinyformat.h util.h utiltime.h \
   /usr/local/include/boost/thread/condition_variable.hpp \
@@ -1465,29 +1471,30 @@ qt/fyd_qt-fyd.o: qt/fyd.cpp config/fyd-config.h qt/bitcoingui.h amount.h \
   /usr/local/include/boost/filesystem/fstream.hpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/fstream \
   rpc/server.h rpc/protocol.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/QApplication \
-  /usr/local/Cellar/qt/5.11.1/include/QtWidgets/qapplication.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcoreapplication.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qeventloop.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qguiapplication.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qinputmethod.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QDebug \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qdebug.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtextstream.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcontiguouscache.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QLibraryInfo \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlibraryinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qversionnumber.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QLocale \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QProcess \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qprocess.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QSettings \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsettings.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QTimer \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtimer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbasictimer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QTranslator \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtranslator.h qt/fyd.moc
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QApplication \
+  /usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qapplication.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qeventloop.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qguiapplication.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qinputmethod.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QDebug \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdebug.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtextstream.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QLibraryInfo \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlibraryinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversionnumber.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QLocale \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QProcess \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocess.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QSettings \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsettings.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QTimer \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtimer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasictimer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QTranslator \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtranslator.h \
+  qt/fyd.moc
 
 config/fyd-config.h:
 
@@ -1881,293 +1888,295 @@ libzerocoin/Denominations.h:
 
 libzerocoin/SpendType.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QLabel:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QLabel:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qlabel.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qlabel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtwidgetsglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtguiglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtguiglobal.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtgui-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtgui-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtwidgets-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtwidgets-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qframe.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qframe.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qwidget.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qwidget.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qwindowdefs.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qwindowdefs.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
 
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/list:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmargins.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmargins.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpaintdevice.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpaintdevice.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qrect.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrect.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsize.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsize.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qpoint.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpoint.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpalette.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpalette.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qcolor.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qcolor.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qrgb.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qrgb.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qrgba64.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qrgba64.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qbrush.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qbrush.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvector.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qmatrix.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qmatrix.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpolygon.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpolygon.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qregion.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qregion.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdatastream.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qdatastream.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiodevice.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qiodevice.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qline.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qline.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtransform.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtransform.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpainterpath.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpainterpath.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qimage.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qimage.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpixelformat.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpixelformat.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qpixmap.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qpixmap.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsharedpointer.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsharedpointer.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qshareddata.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qshareddata.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsharedpointer_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsharedpointer_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfont.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qfont.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfontmetrics.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qfontmetrics.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qfontinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qfontinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsizepolicy.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsizepolicy.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qcursor.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qcursor.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qkeysequence.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qkeysequence.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMainWindow:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMainWindow:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmainwindow.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmainwindow.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtabwidget.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtabwidget.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qicon.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qicon.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QMap:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QMap:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMenu:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMenu:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmenu.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmenu.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qaction.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qaction.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/variant:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qactiongroup.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qactiongroup.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QPoint:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QPoint:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QPushButton:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QPushButton:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qpushbutton.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qpushbutton.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractbutton.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractbutton.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QSystemTrayIcon:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QSystemTrayIcon:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsystemtrayicon.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsystemtrayicon.h:
 
 qt/clientmodel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QObject:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QObject:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QDateTime:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QDateTime:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qdatetime.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdatetime.h:
 
 qt/guiconstants.h:
 
 qt/guiutil.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QEvent:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QEvent:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcoreevent.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcoreevent.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QHeaderView:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QHeaderView:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qheaderview.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qheaderview.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractitemview.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractitemview.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractscrollarea.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractscrollarea.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qabstractitemmodel.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qabstractitemmodel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qitemselectionmodel.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qitemselectionmodel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qset.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qset.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractitemdelegate.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qstyleoption.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qstyleoption.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlocale.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlocale.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractspinbox.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractspinbox.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qvalidator.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qvalidator.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregularexpression.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregularexpression.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qslider.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qslider.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qabstractslider.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qabstractslider.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qstyle.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qstyle.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtabbar.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtabbar.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qrubberband.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qrubberband.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QMessageBox:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QMessageBox:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qmessagebox.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qmessagebox.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qdialog.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qdialog.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QProgressBar:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QProgressBar:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qprogressbar.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qprogressbar.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QString:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QString:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QTableView:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QTableView:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtableview.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtableview.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QTableWidget:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QTableWidget:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qtablewidget.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qtablewidget.h:
 
 /usr/local/include/boost/filesystem.hpp:
 
@@ -3041,13 +3050,13 @@ qt/guiutil.h:
 
 qt/intro.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QDialog:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QDialog:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QMutex:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QMutex:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QThread:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QThread:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qthread.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qthread.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/future:
 
@@ -3155,11 +3164,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/istream:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:
 
@@ -4049,19 +4060,19 @@ utilstrencodings.h:
 
 qt/networkstyle.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/QIcon:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QIcon:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/QPixmap:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QPixmap:
 
 qt/optionsmodel.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QAbstractListModel:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QAbstractListModel:
 
 qt/splashscreen.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QSplashScreen:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QSplashScreen:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qsplashscreen.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qsplashscreen.h:
 
 qt/utilitydialog.h:
 
@@ -4073,17 +4084,23 @@ qt/paymentrequestplus.h:
 
 qt/paymentrequest.pb.h:
 
-/usr/local/include/google/protobuf/stubs/common.h:
+/usr/local/include/google/protobuf/port_def.inc:
 
-/usr/local/include/google/protobuf/stubs/port.h:
+/usr/local/include/google/protobuf/port_undef.inc:
 
-/usr/local/include/google/protobuf/stubs/platform_macros.h:
+/usr/local/include/google/protobuf/io/coded_stream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/param.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/param.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/param.h:
+
+/usr/local/include/google/protobuf/stubs/common.h:
+
+/usr/local/include/google/protobuf/stubs/port.h:
+
+/usr/local/include/google/protobuf/stubs/platform_macros.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/OSByteOrder.h:
 
@@ -4095,27 +4112,23 @@ qt/paymentrequest.pb.h:
 
 /usr/local/include/google/protobuf/stubs/logging.h:
 
-/usr/local/include/google/protobuf/stubs/scoped_ptr.h:
+/usr/local/include/google/protobuf/stubs/strutil.h:
 
-/usr/local/include/google/protobuf/stubs/mutex.h:
+/usr/local/include/google/protobuf/stubs/stringpiece.h:
 
-/usr/local/include/google/protobuf/stubs/callback.h:
+/usr/local/include/google/protobuf/stubs/hash.h:
 
-/usr/local/include/google/protobuf/stubs/type_traits.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_map:
 
-/usr/local/include/google/protobuf/stubs/template_util.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table:
 
-/usr/local/include/google/protobuf/io/coded_stream.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_set:
 
-/usr/local/include/google/protobuf/stubs/atomicops.h:
-
-/usr/local/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h:
+/usr/local/include/google/protobuf/port.h:
 
 /usr/local/include/google/protobuf/arena.h:
 
 /usr/local/include/google/protobuf/arena_impl.h:
-
-/usr/local/include/google/protobuf/stubs/atomic_sequence_num.h:
 
 /usr/local/include/google/protobuf/arenastring.h:
 
@@ -4127,47 +4140,57 @@ qt/paymentrequest.pb.h:
 
 /usr/local/include/google/protobuf/generated_enum_util.h:
 
-/usr/local/include/google/protobuf/map_type_handler.h:
-
-/usr/local/include/google/protobuf/wire_format_lite_inl.h:
-
 /usr/local/include/google/protobuf/message_lite.h:
 
 /usr/local/include/google/protobuf/stubs/once.h:
+
+/usr/local/include/google/protobuf/map_type_handler.h:
+
+/usr/local/include/google/protobuf/parse_context.h:
+
+/usr/local/include/google/protobuf/io/zero_copy_stream.h:
+
+/usr/local/include/google/protobuf/implicit_weak_message.h:
 
 /usr/local/include/google/protobuf/repeated_field.h:
 
 /usr/local/include/google/protobuf/stubs/casts.h:
 
+/usr/local/include/google/protobuf/metadata_lite.h:
+
+/usr/local/include/google/protobuf/generated_message_util.h:
+
+/usr/local/include/google/protobuf/any.h:
+
+/usr/local/include/google/protobuf/has_bits.h:
+
 /usr/local/include/google/protobuf/wire_format_lite.h:
-
-/usr/local/include/google/protobuf/stubs/hash.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_map:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__hash_table:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/unordered_set:
 
 /usr/local/include/google/protobuf/map_entry_lite.h:
 
 /usr/local/include/google/protobuf/map_field_lite.h:
 
-/usr/local/include/google/protobuf/generated_message_util.h:
-
-/usr/local/include/google/protobuf/has_bits.h:
+/usr/local/include/google/protobuf/inlined_string_field.h:
 
 /usr/local/include/google/protobuf/metadata.h:
 
-/usr/local/include/google/protobuf/metadata_lite.h:
-
 /usr/local/include/google/protobuf/unknown_field_set.h:
 
-/usr/local/include/google/protobuf/message.h:
+/usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h:
+
+/usr/local/include/google/protobuf/stubs/callback.h:
+
+/usr/local/include/google/protobuf/stubs/stl_util.h:
+
+/usr/local/include/google/protobuf/generated_message_reflection.h:
 
 /usr/local/include/google/protobuf/descriptor.h:
 
-/usr/local/include/google/protobuf/stubs/shared_ptr.h:
+/usr/local/include/google/protobuf/stubs/mutex.h:
+
+/usr/local/include/google/protobuf/generated_enum_reflection.h:
+
+/usr/local/include/google/protobuf/message.h:
 
 /usr/local/include/google/protobuf/extension_set.h:
 
@@ -4221,67 +4244,75 @@ script/script_error.h:
 
 /usr/local/include/boost/variant/bad_visit.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/x509.h:
+/usr/local/include/openssl/x509.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h:
+/usr/local/include/openssl/ossl_typ.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h:
+/usr/local/include/openssl/symhacks.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h:
+/usr/local/include/openssl/buffer.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h:
+/usr/local/include/openssl/crypto.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h:
+/usr/local/include/openssl/safestack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h:
+/usr/local/include/openssl/stack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h:
+/usr/local/include/openssl/cryptoerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h:
+/usr/local/include/openssl/buffererr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h:
+/usr/local/include/openssl/evp.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h:
+/usr/local/include/openssl/bio.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h:
+/usr/local/include/openssl/bioerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h:
+/usr/local/include/openssl/evperr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h:
+/usr/local/include/openssl/objects.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ec.h:
+/usr/local/include/openssl/obj_mac.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ecdsa.h:
+/usr/local/include/openssl/asn1.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ecdh.h:
+/usr/local/include/openssl/asn1err.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/rsa.h:
+/usr/local/include/openssl/bn.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/dsa.h:
+/usr/local/include/openssl/bnerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/dh.h:
+/usr/local/include/openssl/objectserr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/x509_vfy.h:
+/usr/local/include/openssl/ec.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/lhash.h:
+/usr/local/include/openssl/ecerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/pkcs7.h:
+/usr/local/include/openssl/rsa.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QByteArray:
+/usr/local/include/openssl/rsaerr.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/QList:
+/usr/local/include/openssl/dsa.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qevent.h:
+/usr/local/include/openssl/dh.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qurl.h:
+/usr/local/include/openssl/dherr.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qfile.h:
+/usr/local/include/openssl/dsaerr.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qfiledevice.h:
+/usr/local/include/openssl/x509err.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qvector2d.h:
+/usr/local/include/openssl/x509_vfy.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtouchdevice.h:
+/usr/local/include/openssl/lhash.h:
+
+/usr/local/include/openssl/pkcs7.h:
+
+/usr/local/include/openssl/pkcs7err.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QByteArray:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QList:
 
 qt/walletmodel.h:
 
@@ -4605,50 +4636,50 @@ rpc/server.h:
 
 rpc/protocol.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/QApplication:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/QApplication:
 
-/usr/local/Cellar/qt/5.11.1/include/QtWidgets/qapplication.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers/qapplication.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcoreapplication.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcoreapplication.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qeventloop.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qeventloop.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qguiapplication.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qguiapplication.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qinputmethod.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qinputmethod.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QDebug:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QDebug:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qdebug.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qdebug.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtextstream.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtextstream.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcontiguouscache.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontiguouscache.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QLibraryInfo:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QLibraryInfo:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlibraryinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlibraryinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qversionnumber.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversionnumber.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QLocale:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QLocale:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QProcess:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QProcess:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qprocess.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocess.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QSettings:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QSettings:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsettings.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsettings.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QTimer:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QTimer:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtimer.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtimer.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbasictimer.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasictimer.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QTranslator:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QTranslator:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtranslator.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtranslator.h:
 
 qt/fyd.moc:

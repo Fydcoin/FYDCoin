@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.2.1
+!define VERSION 2.0.0
 !define COMPANY "FydCoin Core project"
 !define URL https://www.fydcoin.com
 

@@ -913,11 +913,11 @@ libbitcoin_server_a-torcontrol.o: torcontrol.cpp torcontrol.h \
   crypto/sph_groestl.h crypto/sph_jh.h crypto/sph_keccak.h \
   crypto/sph_skein.h crypto/sha512.h crypto/sph_luffa.h \
   crypto/sph_cubehash.h crypto/sph_shavite.h crypto/sph_simd.h \
-  crypto/sph_echo.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  limitedmap.h mruset.h protocol.h streams.h sync.h threadsafety.h \
+  crypto/sph_echo.h /usr/local/include/openssl/sha.h \
+  /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h limitedmap.h mruset.h protocol.h \
+  streams.h sync.h threadsafety.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/thread \
   /usr/local/include/boost/filesystem/path.hpp \
@@ -3137,11 +3137,13 @@ crypto/sph_simd.h:
 
 crypto/sph_echo.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 limitedmap.h:
 

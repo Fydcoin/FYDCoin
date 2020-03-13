@@ -17,13 +17,13 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>1.2.1, Copyright © 2009-2019 The Bitcoin Core developers, 2014-2019 The Dash Core developers, 2015-2019 The PIVX Core developers, 2019-2019 The FydCoin Core developers</string>
+  <string>2.0.0, Copyright © 2009-2020 The Bitcoin Core developers, 2014-2020 The Dash Core developers, 2015-2020 The PIVX Core developers, 2019-2020 The FydCoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>1.2.1</string>
+  <string>2.0.0</string>
 
   <key>CFBundleVersion</key>
-  <string>1.2.1</string>
+  <string>2.0.0</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>

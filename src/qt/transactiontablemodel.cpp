@@ -591,6 +591,26 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
             else
                 return COLOR_STAKE;
         }
+
+        if (rec->type == TransactionRecord::RecvWithObfuscation || rec->type == TransactionRecord::RecvWithAddress  ||
+                rec->type == TransactionRecord::RecvFromOther || rec->type == TransactionRecord::RecvFromZerocoinSpend) {
+
+                  return COLOR_RECEIVE;
+
+        }
+
+        if (rec->type == TransactionRecord::SendToAddress || rec->type == TransactionRecord::SendToOther  ||
+                rec->type == TransactionRecord::ZerocoinSpend ) {
+
+                  return COLOR_SEND;
+
+        }
+
+        if (rec->type == TransactionRecord::SendToSelf) {
+
+                  return COLOR_STAKE;
+
+        }
         // Conflicted tx
         if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted) {
             return COLOR_CONFLICTED;
@@ -602,6 +622,12 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
         if (index.column() == Amount && (rec->credit + rec->debit) < 0) {
             return COLOR_NEGATIVE;
         }
+
+        if (index.column() == Amount &&  (rec->type == TransactionRecord::RecvWithAddress  ||
+                rec->type == TransactionRecord::RecvFromOther)) {
+            return COLOR_RECEIVE;
+        }
+
         if (index.column() == ToAddress) {
             return addressColor(rec);
         }

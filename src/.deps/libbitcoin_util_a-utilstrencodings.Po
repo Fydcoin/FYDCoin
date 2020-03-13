@@ -710,21 +710,24 @@ libbitcoin_util_a-utilstrencodings.o: utilstrencodings.cpp \
   /usr/local/include/boost/atomic/detail/atomic_template.hpp \
   /usr/local/include/boost/type_traits/is_signed.hpp \
   /usr/local/include/boost/atomic/detail/casts.hpp tinyformat.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h
+  /usr/local/include/openssl/bio.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
+  /usr/local/include/openssl/crypto.h \
+  /usr/local/include/openssl/safestack.h \
+  /usr/local/include/openssl/stack.h \
+  /usr/local/include/openssl/ossl_typ.h \
+  /usr/local/include/openssl/cryptoerr.h \
+  /usr/local/include/openssl/symhacks.h \
+  /usr/local/include/openssl/bioerr.h \
+  /usr/local/include/openssl/buffer.h \
+  /usr/local/include/openssl/buffererr.h \
+  /usr/local/include/openssl/evp.h /usr/local/include/openssl/evperr.h \
+  /usr/local/include/openssl/objects.h \
+  /usr/local/include/openssl/obj_mac.h /usr/local/include/openssl/asn1.h \
+  /usr/local/include/openssl/asn1err.h /usr/local/include/openssl/bn.h \
+  /usr/local/include/openssl/bnerr.h \
+  /usr/local/include/openssl/objectserr.h
 
 utilstrencodings.h:
 
@@ -2156,32 +2159,46 @@ support/cleanse.h:
 
 tinyformat.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h:
+/usr/local/include/openssl/bio.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h:
+/usr/local/include/openssl/opensslv.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h:
+/usr/local/include/openssl/crypto.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h:
+/usr/local/include/openssl/safestack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h:
+/usr/local/include/openssl/stack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h:
+/usr/local/include/openssl/ossl_typ.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h:
+/usr/local/include/openssl/cryptoerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h:
+/usr/local/include/openssl/symhacks.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h:
+/usr/local/include/openssl/bioerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h:
+/usr/local/include/openssl/buffer.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h:
+/usr/local/include/openssl/buffererr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h:
+/usr/local/include/openssl/evp.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h:
+/usr/local/include/openssl/evperr.h:
+
+/usr/local/include/openssl/objects.h:
+
+/usr/local/include/openssl/obj_mac.h:
+
+/usr/local/include/openssl/asn1.h:
+
+/usr/local/include/openssl/asn1err.h:
+
+/usr/local/include/openssl/bn.h:
+
+/usr/local/include/openssl/bnerr.h:
+
+/usr/local/include/openssl/objectserr.h:

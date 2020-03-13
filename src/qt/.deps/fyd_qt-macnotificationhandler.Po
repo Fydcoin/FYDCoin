@@ -1,10 +1,10 @@
 qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   qt/macnotificationhandler.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/QObject \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QObject \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread.h \
@@ -89,13 +89,13 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mode_t.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/memory \
@@ -134,16 +134,16 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/functional \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/ctime \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/ratio \
@@ -155,14 +155,14 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/syslimits.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/mutex \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__string \
@@ -173,32 +173,59 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_wctrans_t.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__threading_support \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/pthread_impl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/sched.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread_impl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/qos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/qos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sched.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/optional \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/objc/runtime.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/objc/objc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/types.h \
@@ -226,15 +253,6 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_zero.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_isset.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/objc/objc-api.h \
@@ -243,9 +261,6 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/float.h \
@@ -296,7 +311,6 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/machine/vm_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/i386/vm_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/i386/vm_param.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/dispatch.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/os/base.h \
@@ -323,7 +337,6 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/time_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/object.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/queue.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/block.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/source.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/message.h \
@@ -1280,15 +1293,15 @@ qt/fyd_qt-macnotificationhandler.o: qt/macnotificationhandler.mm \
 
 qt/macnotificationhandler.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/QObject:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/QObject:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits:
 
@@ -1458,19 +1471,19 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic:
 
@@ -1548,25 +1561,25 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/functional:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/chrono:
 
@@ -1590,21 +1603,21 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/syslimits.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/mutex:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/system_error:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__errc:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/string:
 
@@ -1626,47 +1639,101 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_wctrans_t.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__threading_support:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/pthread_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/sched.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread_impl.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/qos.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/qos.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sched.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/list:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/vector:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/list:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/map:
 
@@ -1676,7 +1743,7 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/optional:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/objc/runtime.h:
 
@@ -1732,24 +1799,6 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_copy.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
@@ -1765,12 +1814,6 @@ qt/macnotificationhandler.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/float.h:
 
@@ -1872,8 +1915,6 @@ qt/macnotificationhandler.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/i386/vm_param.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/dispatch.h:
@@ -1925,8 +1966,6 @@ qt/macnotificationhandler.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/object.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/queue.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/qos.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/dispatch/block.h:
 

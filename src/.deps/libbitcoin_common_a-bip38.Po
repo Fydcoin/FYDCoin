@@ -234,9 +234,9 @@ libbitcoin_common_a-bip38.o: bip38.cpp bip38.h pubkey.h hash.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream \
   base58.h chainparams.h chainparamsbase.h checkpoints.h \
   primitives/block.h primitives/transaction.h amount.h script/script.h \
@@ -1097,8 +1097,7 @@ libbitcoin_common_a-bip38.o: bip38.cpp bip38.h pubkey.h hash.h \
   /usr/local/include/boost/core/scoped_enum.hpp \
   /usr/local/include/boost/enable_shared_from_this.hpp \
   /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
-  utilstrencodings.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h \
+  utilstrencodings.h /usr/local/include/openssl/aes.h \
   secp256k1/include/secp256k1.h
 
 bip38.h:
@@ -1601,11 +1600,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:
 
@@ -3377,6 +3378,6 @@ utiltime.h:
 
 utilstrencodings.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/aes.h:
+/usr/local/include/openssl/aes.h:
 
 secp256k1/include/secp256k1.h:

@@ -1,9 +1,9 @@
 qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   qt/bitcoinaddressvalidator.cpp qt/bitcoinaddressvalidator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/QValidator \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qvalidator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtguiglobal.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QValidator \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qvalidator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread.h \
@@ -88,13 +88,13 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mode_t.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/memory \
@@ -133,16 +133,16 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/functional \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/ctime \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/ratio \
@@ -154,18 +154,14 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/syslimits.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtGui/qtgui-config.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/mutex \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__string \
@@ -176,51 +172,6 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_wctrans_t.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/vector \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__tree \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/optional \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qregularexpression.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qshareddata.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/variant \
-  /usr/local/Cellar/qt/5.11.1/include/QtCore/qlocale.h base58.h \
-  chainparams.h chainparamsbase.h checkpoints.h uint256.h \
-  primitives/block.h primitives/transaction.h amount.h serialize.h \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/ios \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__locale \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/mutex \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/system_error \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/__errc \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__threading_support \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread/sched.h \
@@ -238,6 +189,57 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sched.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtgui-config.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/vector \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/list \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__tree \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/optional \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregularexpression.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qshareddata.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/variant \
+  /usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlocale.h \
+  base58.h chainparams.h chainparamsbase.h checkpoints.h uint256.h \
+  primitives/block.h primitives/transaction.h amount.h serialize.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/ios \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_locale.h \
@@ -295,9 +297,9 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/sha.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream \
   keystore.h key.h allocators.h support/cleanse.h \
   /usr/local/include/boost/thread/mutex.hpp \
@@ -1142,13 +1144,13 @@ qt/libbitcoinqt_a-bitcoinaddressvalidator.o: \
 
 qt/bitcoinaddressvalidator.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/QValidator:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/QValidator:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qvalidator.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qvalidator.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtguiglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtguiglobal.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobal.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits:
 
@@ -1318,19 +1320,19 @@ qt/bitcoinaddressvalidator.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qconfig.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qconfig.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtcore-config.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtcore-config.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsystemdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsystemdetection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qprocessordetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qprocessordetection.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcompilerdetection.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcompilerdetection.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic:
 
@@ -1408,25 +1410,25 @@ qt/bitcoinaddressvalidator.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/functional:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qtypeinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qtypeinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qsysinfo.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qsysinfo.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlogging.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlogging.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qflags.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qflags.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbasicatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbasicatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qatomic_cxx11.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qatomic_cxx11.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qgenericatomic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qgenericatomic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qglobalstatic.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qglobalstatic.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmutex.h:
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmutex.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/chrono:
 
@@ -1450,29 +1452,21 @@ qt/bitcoinaddressvalidator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/syslimits.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnumeric.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/mutex:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qversiontagging.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base:
 
-/usr/local/Cellar/qt/5.11.1/include/QtGui/qtgui-config.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/system_error:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__errc:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qnamespace.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobjectdefs_impl.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h:
 
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstring.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qchar.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearray.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qrefcount.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qarraydata.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/string:
 
@@ -1493,110 +1487,6 @@ qt/bitcoinaddressvalidator.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_wctrans_t.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringliteral.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringalgorithms.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringview.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlist.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qalgorithms.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qiterator.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhashfunctions.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qpair.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/list:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qbytearraylist.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringlist.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregexp.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qstringmatcher.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qscopedpointer.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmetatype.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvarlengtharray.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qcontainerfwd.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/map:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tree:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__node_handle:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/optional:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qobject_impl.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qregularexpression.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qshareddata.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qhash.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qvariant.h:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qmap.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/variant:
-
-/usr/local/Cellar/qt/5.11.1/include/QtCore/qlocale.h:
-
-base58.h:
-
-chainparams.h:
-
-chainparamsbase.h:
-
-checkpoints.h:
-
-uint256.h:
-
-primitives/block.h:
-
-primitives/transaction.h:
-
-amount.h:
-
-serialize.h:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/ios:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/mutex:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__mutex_base:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/system_error:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__errc:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno:
-
-/Library/Developer/CommandLineTools/usr/include/c++/v1/errno.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/errno.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/errno.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__threading_support:
 
@@ -1631,6 +1521,122 @@ serialize.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mach_port_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sched.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnumeric.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qversiontagging.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers/qtgui-config.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qnamespace.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstring.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qchar.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearray.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qrefcount.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qarraydata.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringliteral.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringalgorithms.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringview.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qalgorithms.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qiterator.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhashfunctions.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qpair.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/numeric:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainertools_impl.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/vector:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__split_buffer:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/list:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qbytearraylist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringlist.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregexp.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qstringmatcher.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qscopedpointer.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmetatype.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvarlengtharray.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qcontainerfwd.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/map:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__tree:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__node_handle:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/optional:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qobject_impl.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qregularexpression.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qshareddata.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qhash.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qvariant.h:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qmap.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/variant:
+
+/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers/qlocale.h:
+
+base58.h:
+
+chainparams.h:
+
+chainparamsbase.h:
+
+checkpoints.h:
+
+uint256.h:
+
+primitives/block.h:
+
+primitives/transaction.h:
+
+amount.h:
+
+serialize.h:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ios:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__locale:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/locale.h:
 
@@ -1774,11 +1780,13 @@ crypto/sph_echo.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/sha.h:
+/usr/local/include/openssl/sha.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
+
+/usr/local/include/openssl/opensslv.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream:
 

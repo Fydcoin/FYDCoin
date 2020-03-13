@@ -66,6 +66,24 @@
         <file alias="novote">res/icons/novote.png</file>
         <file alias="abstainvote">res/icons/abstainvote.png</file>
         <file alias="onion">res/icons/onion.png</file>
+        <file alias="masternodes_hoover">res/icons/masternodes_hoover.png</file>
+        <file alias="masternodes_on">res/icons/masternodes_on.png</file>
+        <file alias="masternodesb">res/icons/masternodesb.png</file>
+        <file alias="governance_on">res/icons/governance_on.png</file>
+        <file alias="governanceb">res/icons/governanceb.png</file>
+        <file alias="governance_hoover">res/icons/governance_hoover.png</file>
+        <file alias="dashboard_hoover">res/icons/dashboard_hoover.png</file>
+        <file alias="dashboard_on">res/icons/dashboard_on.png</file>
+        <file alias="dashboard">res/icons/dashboard.png</file>
+        <file alias="transactions_on">res/icons/transactions_on.png</file>
+        <file alias="transactionsb">res/icons/transactionsb.png</file>
+        <file alias="transactions_hoover">res/icons/transactions_hoover.png</file>
+        <file alias="receive_hoover">res/icons/receive_hoover.png</file>
+        <file alias="receive_on">res/icons/receive_on.png</file>
+        <file alias="receiveb">res/icons/receiveb.png</file>
+        <file alias="send_on">res/icons/send_on.png</file>
+        <file alias="sendb">res/icons/sendb.png</file>
+        <file alias="send_hoover">res/icons/send_hoover.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>
@@ -83,6 +101,9 @@
         <file alias="qtreeview_selected">res/images/qtreeview_selected.png</file>
         <file alias="walletFrame_bg">res/images/walletFrame_bg.png</file>
         <file alias="walletFrame">res/images/walletFrame.png</file>
+        <file alias="balanceImage">res/images/balanceImage.png</file>
+        <file alias="rewardsImage">res/images/rewardsImage.png</file>
+        <file alias="transactionList">res/images/transactionList.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="splash_testnet">res/images/splash_testnet.png</file>
         <file alias="splash_regtest">res/images/splash_regtest.png</file>

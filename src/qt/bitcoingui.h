@@ -95,6 +95,7 @@ private:
     QProgressDialog* progressDialog;
 
     QMenuBar* appMenuBar;
+    QAction* spacer;
     QAction* overviewAction;
     QAction* historyAction;
     QAction* masternodeAction;

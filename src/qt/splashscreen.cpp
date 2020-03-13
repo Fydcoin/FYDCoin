@@ -26,8 +26,8 @@
 SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) : QWidget(0, f), curAlignment(0)
 {
     // set reference point, paddings
-    int paddingLeft = 14;
-    int paddingTop = 420;
+    int paddingLeft = 125;
+    int paddingTop = 375;
     int titleVersionVSpace = 17;
     int titleCopyrightVSpace = 32;
 
@@ -62,17 +62,17 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     pixPaint.setFont(QFont(font, 28 * fontFactor));
     fm = pixPaint.fontMetrics();
     //titleTextWidth = fm.width(titleText);
-    pixPaint.drawText(paddingLeft, paddingTop, titleText);
+    pixPaint.drawText(paddingLeft + 2, paddingTop, titleText);
 
     pixPaint.setFont(QFont(font, 15 * fontFactor));
-    pixPaint.drawText(paddingLeft, paddingTop + titleVersionVSpace, versionText);
+    pixPaint.drawText(paddingLeft + 25, paddingTop + titleVersionVSpace, versionText);
 
     // draw copyright stuff
     pixPaint.setFont(QFont(font, 10 * fontFactor));
-    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace, copyrightTextBtc);
-    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 12, copyrightTextDash);
-    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 24, copyrightTextPIVX);
-    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 36, copyrightTextFYD);
+    pixPaint.drawText(paddingLeft - 10, paddingTop + titleCopyrightVSpace, copyrightTextBtc);
+    pixPaint.drawText(paddingLeft - 10, paddingTop + titleCopyrightVSpace + 12, copyrightTextDash);
+    pixPaint.drawText(paddingLeft - 10, paddingTop + titleCopyrightVSpace + 24, copyrightTextPIVX);
+    pixPaint.drawText(paddingLeft - 10, paddingTop + titleCopyrightVSpace + 36, copyrightTextFYD);
 
     // draw additional text if special network
     if (!titleAddText.isEmpty()) {
@@ -88,6 +88,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
 
     // Set window title
     setWindowTitle(titleText + " " + titleAddText);
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 
     // Resize window and move to center of desktop, disallow resizing
     QRect r(QPoint(), pixmap.size());

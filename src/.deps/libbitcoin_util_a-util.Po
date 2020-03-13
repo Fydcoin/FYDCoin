@@ -1182,21 +1182,24 @@ libbitcoin_util_a-util.o: util.cpp config/fyd-config.h util.h compat.h \
   /usr/local/include/boost/date_time/time_facet.hpp \
   /usr/local/include/boost/algorithm/string/erase.hpp \
   /usr/local/include/boost/date_time/posix_time/time_parsers.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h \
+  /usr/local/include/openssl/bio.h /usr/local/include/openssl/e_os2.h \
+  /usr/local/include/openssl/opensslconf.h \
+  /usr/local/include/openssl/opensslv.h \
+  /usr/local/include/openssl/crypto.h \
+  /usr/local/include/openssl/safestack.h \
+  /usr/local/include/openssl/stack.h \
+  /usr/local/include/openssl/ossl_typ.h \
+  /usr/local/include/openssl/cryptoerr.h \
+  /usr/local/include/openssl/symhacks.h \
+  /usr/local/include/openssl/bioerr.h \
+  /usr/local/include/openssl/buffer.h \
+  /usr/local/include/openssl/buffererr.h \
+  /usr/local/include/openssl/evp.h /usr/local/include/openssl/evperr.h \
+  /usr/local/include/openssl/objects.h \
+  /usr/local/include/openssl/obj_mac.h /usr/local/include/openssl/asn1.h \
+  /usr/local/include/openssl/asn1err.h /usr/local/include/openssl/bn.h \
+  /usr/local/include/openssl/bnerr.h \
+  /usr/local/include/openssl/objectserr.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/fcntl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/stat.h \
   /usr/local/include/boost/algorithm/string/join.hpp \
@@ -1340,9 +1343,9 @@ libbitcoin_util_a-util.o: util.cpp config/fyd-config.h util.h compat.h \
   /usr/local/include/boost/thread/future_error_code.hpp \
   /usr/local/include/boost/detail/atomic_undef_macros.hpp \
   /usr/local/include/boost/detail/atomic_redef_macros.hpp \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/conf.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/lhash.h \
-  /usr/local/Cellar/openssl/1.0.2o_2/include/openssl/rand.h
+  /usr/local/include/openssl/conf.h /usr/local/include/openssl/lhash.h \
+  /usr/local/include/openssl/conferr.h /usr/local/include/openssl/rand.h \
+  /usr/local/include/openssl/randerr.h
 
 config/fyd-config.h:
 
@@ -3734,35 +3737,49 @@ utilstrencodings.h:
 
 /usr/local/include/boost/date_time/posix_time/time_parsers.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bio.h:
+/usr/local/include/openssl/bio.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/e_os2.h:
+/usr/local/include/openssl/e_os2.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslconf.h:
+/usr/local/include/openssl/opensslconf.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/crypto.h:
+/usr/local/include/openssl/opensslv.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/stack.h:
+/usr/local/include/openssl/crypto.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/safestack.h:
+/usr/local/include/openssl/safestack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/opensslv.h:
+/usr/local/include/openssl/stack.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/ossl_typ.h:
+/usr/local/include/openssl/ossl_typ.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/symhacks.h:
+/usr/local/include/openssl/cryptoerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/buffer.h:
+/usr/local/include/openssl/symhacks.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/evp.h:
+/usr/local/include/openssl/bioerr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/objects.h:
+/usr/local/include/openssl/buffer.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/obj_mac.h:
+/usr/local/include/openssl/buffererr.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/asn1.h:
+/usr/local/include/openssl/evp.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/bn.h:
+/usr/local/include/openssl/evperr.h:
+
+/usr/local/include/openssl/objects.h:
+
+/usr/local/include/openssl/obj_mac.h:
+
+/usr/local/include/openssl/asn1.h:
+
+/usr/local/include/openssl/asn1err.h:
+
+/usr/local/include/openssl/bn.h:
+
+/usr/local/include/openssl/bnerr.h:
+
+/usr/local/include/openssl/objectserr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/fcntl.h:
 
@@ -4052,8 +4069,12 @@ utilstrencodings.h:
 
 /usr/local/include/boost/detail/atomic_redef_macros.hpp:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/conf.h:
+/usr/local/include/openssl/conf.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/lhash.h:
+/usr/local/include/openssl/lhash.h:
 
-/usr/local/Cellar/openssl/1.0.2o_2/include/openssl/rand.h:
+/usr/local/include/openssl/conferr.h:
+
+/usr/local/include/openssl/rand.h:
+
+/usr/local/include/openssl/randerr.h:

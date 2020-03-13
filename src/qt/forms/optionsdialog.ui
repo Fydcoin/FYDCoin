@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>576</width>
-    <height>442</height>
+    <height>532</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -600,6 +600,9 @@ https://www.transifex.com/FydCoin/FYD-project-translations</string>
         <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
          <item>
           <widget class="QCheckBox" name="checkBoxHideZeroBalances">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
            <property name="toolTip">
             <string>Hide empty balances</string>
            </property>
@@ -608,6 +611,12 @@ https://www.transifex.com/FydCoin/FYD-project-translations</string>
            </property>
            <property name="text">
             <string>Hide empty balances</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
            </property>
           </widget>
          </item>

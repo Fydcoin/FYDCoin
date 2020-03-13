@@ -683,9 +683,20 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/unit_mfyd.png qt/res/icons/unit_fydd.png \
 	qt/res/icons/unit_tfyd.png qt/res/icons/unit_tmfyd.png \
 	qt/res/icons/unit_tfydd.png qt/res/icons/yesvote.png \
-	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
-	qt/res/images/about.png qt/res/images/splash.png \
-	qt/res/images/splash_testnet.png \
+	qt/res/icons/novote.png qt/res/icons/masternodes_hoover.png \
+	qt/res/icons/masternodes_on.png qt/res/icons/masternodesb.png \
+	qt/res/icons/governance_on.png qt/res/icons/governanceb.png \
+	qt/res/icons/governance_hoover.png \
+	qt/res/icons/dashboard_hoover.png \
+	qt/res/icons/dashboard_on.png qt/res/icons/dashboard.png \
+	qt/res/icons/transactions_on.png \
+	qt/res/icons/transactionsb.png \
+	qt/res/icons/transactions_hoover.png \
+	qt/res/icons/receive_hoover.png qt/res/icons/receive_on.png \
+	qt/res/icons/receiveb.png qt/res/icons/send_hoover.png \
+	qt/res/icons/send_on.png qt/res/icons/sendb.png \
+	qt/res/icons/abstainvote.png qt/res/images/about.png \
+	qt/res/images/splash.png qt/res/images/splash_testnet.png \
 	qt/res/images/splash_regtest.png \
 	qt/res/images/fyd_logo_horizontal.png \
 	qt/res/images/downArrow_dark.png \
@@ -696,6 +707,8 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/images/leftArrow_small_dark.png \
 	qt/res/images/rightArrow_small_dark.png \
 	qt/res/images/qtreeview_selected.png \
+	qt/res/images/balanceImage.png qt/res/images/rewardsImage.png \
+	qt/res/images/transactionList.png \
 	qt/res/images/walletFrame.png qt/res/images/walletFrame_bg.png \
 	qt/res/css/default.css $(wildcard \
 	$(srcdir)/qt/res/movies/spinner-*.png)
@@ -1856,16 +1869,16 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 1
-CLIENT_VERSION_MINOR = 2
-CLIENT_VERSION_REVISION = 2
+CLIENT_VERSION_MAJOR = 2
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPAT_LDFLAGS = 
-COPYRIGHT_YEAR = 2019
+COPYRIGHT_YEAR = 2020
 CPP = gcc -E
 CPPFILT = /usr/bin/c++filt
 CPPFLAGS = -I/usr/local/opt/openssl/include -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -I/usr/local/opt/berkeley-db@4/include -DMAC_OSX
-CRYPTO_CFLAGS = -I/usr/local/Cellar/openssl/1.0.2o_2/include
-CRYPTO_LIBS = -L/usr/local/Cellar/openssl/1.0.2o_2/lib -lcrypto
+CRYPTO_CFLAGS = -I/usr/local/Cellar/openssl@1.1/1.1.1d/include
+CRYPTO_LIBS = -L/usr/local/Cellar/openssl@1.1/1.1.1d/lib -lcrypto
 CXX = g++ -std=c++11
 CXXCPP = g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
@@ -1884,10 +1897,10 @@ ECHO_N =
 ECHO_T = 
 EGREP = /usr/bin/grep -E
 ERROR_CXXFLAGS = 
-EVENT_CFLAGS = -I/usr/local/Cellar/libevent/2.1.8/include
-EVENT_LIBS = -L/usr/local/Cellar/libevent/2.1.8/lib -levent
-EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/usr/local/Cellar/libevent/2.1.8/include
-EVENT_PTHREADS_LIBS = -L/usr/local/Cellar/libevent/2.1.8/lib -levent_pthreads -levent
+EVENT_CFLAGS = -I/usr/local/Cellar/libevent/2.1.11_1/include
+EVENT_LIBS = -L/usr/local/Cellar/libevent/2.1.11_1/lib -levent
+EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/usr/local/Cellar/libevent/2.1.11_1/include
+EVENT_PTHREADS_LIBS = -L/usr/local/Cellar/libevent/2.1.11_1/lib -levent_pthreads -levent
 EXEEXT = 
 EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /usr/bin/grep -F
@@ -1919,15 +1932,15 @@ LEVELDB_TARGET_FLAGS = -DOS_MACOSX
 LIBLEVELDB =  $(am__append_10)
 LIBMEMENV =  $(am__append_11)
 LIBOBJS = 
-LIBS = -lcrypto  -L/usr/local/opt/berkeley-db@4/lib -lgmp
+LIBS =  -L/usr/local/opt/berkeley-db@4/lib -lgmp
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = lipo
 LN_S = ln -s
-LRELEASE = /usr/local/Cellar/qt/5.11.1/bin/lrelease
+LRELEASE = /usr/local/Cellar/qt/5.14.0/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = /usr/local/Cellar/qt/5.11.1/bin/lupdate
+LUPDATE = /usr/local/Cellar/qt/5.14.0/bin/lupdate
 MAINT = 
 MAKEINFO = ${SHELL} /Users/vishalsachdeva/Downloads/FYDCoin-master/build-aux/missing makeinfo
 MAKENSIS = 
@@ -1935,7 +1948,7 @@ MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = 
 MKDIR_P = ../build-aux/install-sh -c -d
-MOC = /usr/local/Cellar/qt/5.11.1/bin/moc
+MOC = /usr/local/Cellar/qt/5.14.0/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir) -DQ_OS_MAC
 NM = /usr/bin/nm -B
 NMEDIT = nmedit
@@ -1951,29 +1964,29 @@ OTOOL64 = :
 PACKAGE = fyd
 PACKAGE_BUGREPORT = www.fydcoin.com
 PACKAGE_NAME = FydCoin Core
-PACKAGE_STRING = FydCoin Core 1.2.2
+PACKAGE_STRING = FydCoin Core 2.0.0
 PACKAGE_TARNAME = fyd
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.2.2
+PACKAGE_VERSION = 2.0.0
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = 
 PKG_CONFIG = /usr/local/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /usr/local/opt/qt/lib/pkgconfig:/usr/local/opt/openssl/lib/pkgconfig:
+PKG_CONFIG_PATH = /usr/local/opt/qt/lib/pkgconfig:/usr/local/opt/openssl@1.1/lib/pkgconfig:
 PORT = 
-PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/usr/local/Cellar/protobuf/3.5.1_1/include
-PROTOBUF_LIBS = -L/usr/local/Cellar/protobuf/3.5.1_1/lib -lprotobuf -D_THREAD_SAFE
+PROTOBUF_CFLAGS = -pthread -I/usr/local/Cellar/protobuf/3.11.2/include
+PROTOBUF_LIBS = -L/usr/local/Cellar/protobuf/3.11.2/lib -lprotobuf
 PROTOC = /usr/local/bin/protoc
 PTHREAD_CC = gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
-PYTHON = /usr/local/bin/python3.7
+PYTHON = /usr/local/bin/python
 PYTHONPATH = 
 QR_CFLAGS = -I/usr/local/Cellar/qrencode/4.0.2/include
 QR_LIBS = -L/usr/local/Cellar/qrencode/4.0.2/lib -lqrencode
-QT5_CFLAGS = -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtNetwork -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtWidgets -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtGui -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
-QT5_LIBS = -F/usr/local/Cellar/qt/5.11.1/lib -framework QtNetwork -F/usr/local/Cellar/qt/5.11.1/lib -framework QtWidgets -F/usr/local/Cellar/qt/5.11.1/lib -framework QtGui -F/usr/local/Cellar/qt/5.11.1/lib -framework QtCore
+QT5_CFLAGS = -DQT_NETWORK_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_WIDGETS_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_GUI_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtNetwork.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
+QT5_LIBS = -F/usr/local/Cellar/qt/5.14.0/lib -framework QtNetwork -F/usr/local/Cellar/qt/5.14.0/lib -framework QtWidgets -F/usr/local/Cellar/qt/5.14.0/lib -framework QtGui -F/usr/local/Cellar/qt/5.14.0/lib -framework QtCore
 QTACCESSIBILITY_CFLAGS = 
 QTACCESSIBILITY_LIBS = 
 QTCGL_CFLAGS = 
@@ -1996,20 +2009,20 @@ QTTHEME_CFLAGS =
 QTTHEME_LIBS = 
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_DBUS_CFLAGS = -DQT_DBUS_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtDBus -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
-QT_DBUS_INCLUDES = -DQT_DBUS_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtDBus -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
-QT_DBUS_LIBS = -F/usr/local/Cellar/qt/5.11.1/lib -framework QtDBus -F/usr/local/Cellar/qt/5.11.1/lib -framework QtCore
-QT_INCLUDES = -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtNetwork -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtWidgets -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtGui -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
+QT_DBUS_CFLAGS = -DQT_DBUS_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtDBus.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
+QT_DBUS_INCLUDES = -DQT_DBUS_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtDBus.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
+QT_DBUS_LIBS = -F/usr/local/Cellar/qt/5.14.0/lib -framework QtDBus -F/usr/local/Cellar/qt/5.14.0/lib -framework QtCore
+QT_INCLUDES = -DQT_NETWORK_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_WIDGETS_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_GUI_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtNetwork.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
 QT_LDFLAGS = 
-QT_LIBS = -F/usr/local/Cellar/qt/5.11.1/lib -framework QtNetwork -F/usr/local/Cellar/qt/5.11.1/lib -framework QtWidgets -F/usr/local/Cellar/qt/5.11.1/lib -framework QtGui -F/usr/local/Cellar/qt/5.11.1/lib -framework QtCore -framework Foundation -framework ApplicationServices -framework AppKit
+QT_LIBS = -F/usr/local/Cellar/qt/5.14.0/lib -framework QtNetwork -F/usr/local/Cellar/qt/5.14.0/lib -framework QtWidgets -F/usr/local/Cellar/qt/5.14.0/lib -framework QtGui -F/usr/local/Cellar/qt/5.14.0/lib -framework QtCore -framework Foundation -framework ApplicationServices -framework AppKit
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
-QT_TEST_CFLAGS = -DQT_TESTLIB_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtTest -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
-QT_TEST_INCLUDES = -DQT_TESTLIB_LIB -DQT_CORE_LIB -I/usr/local/Cellar/qt/5.11.1/include/QtTest -I/usr/local/Cellar/qt/5.11.1/include -I/usr/local/Cellar/qt/5.11.1/include/QtCore -I/usr/local/Cellar/qt/5.11.1/include
-QT_TEST_LIBS = -F/usr/local/Cellar/qt/5.11.1/lib -framework QtTest -F/usr/local/Cellar/qt/5.11.1/lib -framework QtCore
+QT_TEST_CFLAGS = -DQT_TESTLIB_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtTest.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
+QT_TEST_INCLUDES = -DQT_TESTLIB_LIB -F/usr/local/Cellar/qt/5.14.0/lib -DQT_CORE_LIB -F/usr/local/Cellar/qt/5.14.0/lib -I/usr/local/Cellar/qt/5.14.0/lib/QtTest.framework/Headers -I/usr/local/Cellar/qt/5.14.0/lib/QtCore.framework/Headers
+QT_TEST_LIBS = -F/usr/local/Cellar/qt/5.14.0/lib -framework QtTest -F/usr/local/Cellar/qt/5.14.0/lib -framework QtCore
 QT_TRANSLATION_DIR = 
 RANLIB = /usr/bin/ranlib
-RCC = /usr/local/Cellar/qt/5.11.1/bin/rcc
+RCC = /usr/local/Cellar/qt/5.14.0/bin/rcc
 READELF = 
 RELDFLAGS = 
 RSVG_CONVERT = /usr/local/bin/rsvg-convert
@@ -2021,19 +2034,19 @@ SHANI_CXXFLAGS = -msse4 -msha
 SHELL = /bin/sh
 SSE41_CXXFLAGS = -msse4.1
 SSE42_CXXFLAGS = -msse4.2
-SSL_CFLAGS = -I/usr/local/Cellar/openssl/1.0.2o_2/include
-SSL_LIBS = -L/usr/local/Cellar/openssl/1.0.2o_2/lib -lssl
+SSL_CFLAGS = -I/usr/local/Cellar/openssl@1.1/1.1.1d/include
+SSL_LIBS = -L/usr/local/Cellar/openssl@1.1/1.1.1d/lib -lssl
 STRIP = /usr/bin/strip
 TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
-UIC = /usr/local/Cellar/qt/5.11.1/bin/uic
+UIC = /usr/local/Cellar/qt/5.14.0/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_NUM_GMP = 
 USE_NUM_OPENSSL = 
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.2.2
+VERSION = 2.0.0
 WARN_CXXFLAGS =  -Wall -Wextra -Wformat -Wvla -Wformat-security -Wthread-safety-analysis -Wrange-loop-analysis -Wredundant-decls
 WINDOWS_BITS = 
 WINDRES = 
@@ -2986,6 +2999,24 @@ RES_ICONS = \
   qt/res/icons/unit_tfydd.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
+  qt/res/icons/masternodes_hoover.png \
+  qt/res/icons/masternodes_on.png \
+  qt/res/icons/masternodesb.png \
+  qt/res/icons/governance_on.png \
+  qt/res/icons/governanceb.png \
+  qt/res/icons/governance_hoover.png \
+  qt/res/icons/dashboard_hoover.png \
+  qt/res/icons/dashboard_on.png \
+  qt/res/icons/dashboard.png \
+  qt/res/icons/transactions_on.png \
+  qt/res/icons/transactionsb.png \
+  qt/res/icons/transactions_hoover.png \
+  qt/res/icons/receive_hoover.png \
+  qt/res/icons/receive_on.png \
+  qt/res/icons/receiveb.png \
+  qt/res/icons/send_hoover.png \
+  qt/res/icons/send_on.png \
+  qt/res/icons/sendb.png \
   qt/res/icons/abstainvote.png
 
 BITCOIN_QT_BASE_CPP = \
@@ -3068,6 +3099,9 @@ RES_IMAGES = \
   qt/res/images/leftArrow_small_dark.png \
   qt/res/images/rightArrow_small_dark.png \
   qt/res/images/qtreeview_selected.png \
+  qt/res/images/balanceImage.png \
+	qt/res/images/rewardsImage.png \
+	qt/res/images/transactionList.png \
   qt/res/images/walletFrame.png \
   qt/res/images/walletFrame_bg.png \
   qt/res/images/walletFrame_bg.png

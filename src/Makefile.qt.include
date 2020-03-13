@@ -275,6 +275,24 @@ RES_ICONS = \
   qt/res/icons/unit_tfydd.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
+  qt/res/icons/masternodes_hoover.png \
+  qt/res/icons/masternodes_on.png \
+  qt/res/icons/masternodesb.png \
+  qt/res/icons/governance_on.png \
+  qt/res/icons/governanceb.png \
+  qt/res/icons/governance_hoover.png \
+  qt/res/icons/dashboard_hoover.png \
+  qt/res/icons/dashboard_on.png \
+  qt/res/icons/dashboard.png \
+  qt/res/icons/transactions_on.png \
+  qt/res/icons/transactionsb.png \
+  qt/res/icons/transactions_hoover.png \
+  qt/res/icons/receive_hoover.png \
+  qt/res/icons/receive_on.png \
+  qt/res/icons/receiveb.png \
+  qt/res/icons/send_hoover.png \
+  qt/res/icons/send_on.png \
+  qt/res/icons/sendb.png \
   qt/res/icons/abstainvote.png
 
 BITCOIN_QT_BASE_CPP = \
@@ -364,6 +382,9 @@ RES_IMAGES = \
   qt/res/images/leftArrow_small_dark.png \
   qt/res/images/rightArrow_small_dark.png \
   qt/res/images/qtreeview_selected.png \
+  qt/res/images/balanceImage.png \
+	qt/res/images/rewardsImage.png \
+	qt/res/images/transactionList.png \
   qt/res/images/walletFrame.png \
   qt/res/images/walletFrame_bg.png \
   qt/res/images/walletFrame_bg.png
