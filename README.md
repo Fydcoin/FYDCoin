@@ -208,4 +208,3 @@ Explorer http://explorer.fydcoin.com
    <td class=xl6817252 align=right>15</td>
   </tr>
  </table>
-
