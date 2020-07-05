@@ -153,7 +153,7 @@ P2P Port 37485
 ### FYD Community
 
 <table>
-<tr><td>Discord:</td><td>https://discord.gg/G4Kv4HR</td></tr>
+<tr><td>Discord:</td><td>https://discord.gg/8ucnqgN</td></tr>
 <tr><td>Telegram:</td><td>https://t.me/FYD_COIN</td></tr>
 <tr><td>Linkedin:</td><td>https://www.linkedin.com/in/fydcoin-blockchain-465067194/</td></tr>
 <tr><td>Twitter:</td><td>https://twitter.com/FydcoinO</td></tr>
@@ -172,8 +172,8 @@ P2P Port 37485
 ### FYD listing partners
 
 <table>
-<tr><td>Coinmarketcap:</td><td>https://coinmarketcap.com/currencies/find-your-developer/
- <tr><td>Coinpaprika:</td><td>https://coinpaprika.com/coin/fyd-find-your-developer/
+<tr><td>Coinmarketcap:</td><td>https://coinmarketcap.com/currencies/fydcoin/
+ <tr><td>Coinpaprika:</td><td>https://coinpaprika.com/coin/fyd-fydcoin/
 </td></tr>
 </table>
 
