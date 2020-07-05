@@ -35,62 +35,6 @@ P2P Port 37485
 <td class="xl6317252" style="width: 81pt;" width="107">Time period</td>
 </tr>
 <tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">245,000-250,000</td>
-<td class="xl6617252">2620</td>
-<td class="xl6617252">1834</td>
-<td class="xl6717252">524</td>
-<td class="xl6553517252" align="right">262</td>
-<td class="xl6817252" align="right">3.7 days</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">250,001-294,000</td>
-<td class="xl6617252">800</td>
-<td class="xl6617252">560</td>
-<td class="xl6617252">160</td>
-<td class="xl6717252" align="right">80</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">294,001-338,000</td>
-<td class="xl6617252">700</td>
-<td class="xl6617252">490</td>
-<td class="xl6617252">140</td>
-<td class="xl6717252" align="right">70</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">338,001-382,000</td>
-<td class="xl6617252">600</td>
-<td class="xl6617252">420</td>
-<td class="xl6617252">120</td>
-<td class="xl6717252" align="right">60</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">382,001-426,000</td>
-<td class="xl6617252">500</td>
-<td class="xl6617252">350</td>
-<td class="xl6617252">100</td>
-<td class="xl6717252" align="right">50</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">426,001-470,000</td>
-<td class="xl6617252">400</td>
-<td class="xl6617252">280</td>
-<td class="xl6617252">80</td>
-<td class="xl6717252" align="right">40</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
-<td class="xl6417252" style="height: 15.75pt;" height="21">470,001-526,000</td>
-<td class="xl6617252">300</td>
-<td class="xl6617252">210</td>
-<td class="xl6617252">60</td>
-<td class="xl6717252" align="right">30</td>
-<td class="xl6817252" align="right">1 month</td>
-</tr>
-<tr style="mso-height-source: userset; height: 15.75pt;">
 <td class="xl6417252" style="height: 15.75pt;" height="21">526,001-1,052,000</td>
 <td class="xl6617252">200</td>
 <td class="xl6617252">140</td>
