@@ -32,6 +32,7 @@ The FYD explorer is a decentralized online ledger (spreadsheet) that holds all F
 
 <strong>FYD wiki</strong> </br>
 FYD focusses on educating newcomers through articles and free online video’s about Cryptocurrency, Staking crypto, Mining crypto, Masternodes, NFT Tokens and much more.</br>
+<strong>► FYD wiki youtube channel:</strong> [FYD wiki on Youtube](https://youtu.be/OiauorY0yv4) </br>
 <strong>► Crypto for beginners:</strong> [https://fydcoin.com/crypto](https://fydcoin.com/crypto) </br>
 <strong>► Mining for beginners:</strong> [https://fydcoin.com/mining](https://fydcoin.com/mining) </br>
 <strong>► Staking for beginners:</strong> [https://fydcoin.com/staking](https://fydcoin.com/staking) </br>
@@ -185,7 +186,6 @@ P2P Port 37485
 <tr><td>Telegram:</td><td>https://t.me/FYD_COIN</td></tr>
 <tr><td>Linkedin:</td><td>https://www.linkedin.com/in/fydcoin-blockchain-465067194/</td></tr>
 <tr><td>Twitter:</td><td>https://twitter.com/Fydcoin</td></tr>
-<tr><td>Medium:</td><td>https://medium.com/@fydcoin</td></tr>
 <tr><td>Telegram Turkey:</td><td>https://t.me/fydturkey</td></tr>
 <tr><td>Telegram Hispanico:</td><td>https://t.me/FYD_Hispanico</td></tr>
 </table>
@@ -202,20 +202,5 @@ P2P Port 37485
 <table>
 <tr><td>Coinmarketcap:</td><td>https://coinmarketcap.com/currencies/fydcoin/
  <tr><td>Coinpaprika:</td><td>https://coinpaprika.com/coin/fyd-fydcoin/
-</td></tr>
-</table>
-
-### Masternode Tracking
-
-<table>
-<tr><td>Masternodes.online:</td><td>https://masternodes.online/currencies/FYD/</td></tr>
-<tr><td>Masternodes.pro: </td><td>https://masternodes.pro/stats/fyd/statistics
-</td></tr>
-</table>
-
-### Masternode hosting Services 
-
-<table>
-<tr><td>Ihostmn:</td><td>https://ihostmn.com/hostmn.php?coin=FYD
 </td></tr>
 </table>
