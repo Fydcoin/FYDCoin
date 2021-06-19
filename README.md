@@ -1,12 +1,41 @@
-FYDCoin Core integration/staging repository
+<strong>About FYD</strong>
 =====================================
 
+<strong>What is FYD?</strong> </br>
+FYD is a decentralized online community of <strong>freelancers</strong> and <strong>crypto enthusiasts</strong>, working together to realize </br>a <strong>decentralized gig-economy</strong> utilizing the advantages of [<strong>blockchain</strong>](https://explorerv2.fydcoin.com) and [<strong>cryptocurrency</strong>](https://www.fydcoin.com).
 
-FYDCoin is an open source decentralized crypto-currency focused on fast transactions with low transaction fees.
+<strong>Website:</strong> [<strong>fydcoin.com</strong>](https://www.fydcoin.com) </br>
+<strong>Whitepaper:</strong> [<strong>Whitepaper_FYD_2021</strong>](https://www.fydcoin.com/whitepaper_FYD_cryptocurrency.pdf) </br>
+<strong>Block Explorer:</strong> [<strong>https://explorer.fydcoin.com</strong>](http://explorer.fydcoin.com/) </br>
+<strong>Backup Explorer:</strong> [<strong>explorerv2.fydcoin.com</strong>](https://explorerv2.fydcoin.com) </br>
 
-Website: [fydcoin.com](https://www.fydcoin.com)
-Block Explorer: [explorer.fydcoin.com](http://explorer.fydcoin.com/)
-Backup Explorer: [Backup explorer](http://149.28.168.37:3001/)
+
+======================================
+
+
+<strong>What is FYDcoin?</strong> </br>
+<strong>FYDcoin</strong> is a [<strong>cryptocurrency</strong>](https://www.fydcoin.com) designed for (digital) <strong>freelancers</strong> such as <strong>web designers</strong>, <strong>programmers</strong>, <strong>animators</strong>, <strong>writers</strong> and <strong>online content creators</strong>. FYDcoins are digital coins that can be sent from person to person without a bank. <strong>Fast transactions</strong> (confirmed under a minute) and <strong>low transaction fees</strong> (under $0.0001) make FYDcoin ideal for <strong>P2P microtransactions</strong> necessary in the gig-economy.
+
+<strong>What makes FYDcoin unique?</strong> </br>
+FYDcoin is a [<strong>cryptocurrency</strong>](https://www.fydcoin.com/crypto) that has a lot of similarities to Bitcoin. For example FYDcoin has its own [blockchain](https://explorerv2.fydcoin.com), a finite [coin supply](https://explorerv2.fydcoin.com/coin-details) <strong>(650 million FYDcoin)</strong>,  doesn’t have a central point of authority, and has a yearly halving. What makes <strong>FYDcoin</strong> different from Bitcoin is that you can [mine](https://www.fydcoin.com/#Mining%20FYD) (mint) <strong>FYDcoin</strong> on any laptop or PC <strong>without the need for expensive mining equipment</strong>. Not only does this <strong>decentralize the network</strong> (since mining is available for a larger audience) it also <strong>uses significantly less energy than alternatives</strong> to maintain, and scale, a secured [cryptocurrency network](https://explorerv2.fydcoin.com).
+
+<strong>Staking FYD & Masternodes – Passive income in crypto</strong> </br>
+With an active balance in a [FYD Wallet](https://www.fydcoin.com/#Download-Wallet), and a stable internet connection, users receive FYDcoin blockrewards. The higher the <strong>FYDcoin</strong> balance of a user, the higher the chance of receiving a <strong>blockreward</strong>. Staking can be done on any [laptop/PC or Macbook](https://www.fydcoin.com/#Download-Wallet). With <strong>400.000 FYDcoin</strong>, users are able to host a server with a copy of the [FYD blockchain](https://explorerv2.fydcoin.com) and receive higher rewards than [Staking](https://www.fydcoin.com/staking) with a [Masternode](https://www.fydcoin.com/masternode).
+
+<strong>FYD explorer</strong> </br>
+The FYD explorer is a decentralized online ledger (spreadsheet) that holds all FYDcoin transactions ever made, shows statistics about mining/masternode rewards and the distribution of <strong>FYDcoin</strong>.
+<strong>► Block Explorer:</strong> [https://explorer.fydcoin.com](http://explorer.fydcoin.com/) </br>
+<strong>► Masternode statistics:</strong> [<strong>https://explorer.fydcoin.com/masternodes</strong>](http://explorer.fydcoin.com/masternodes) </br>
+<strong>► Price details:</strong> [<strong>https://explorerv2.fydcoin.com/market</strong>](http://explorer.fydcoin.com/masternodes) </br>
+<strong>► Coin distribution:</strong> [<strong>http://explorerv2.fydcoin.com/coin-details</strong>](http://explorer.fydcoin.com/masternodes) </br>
+<strong>► FYD nodes:</strong> [<strong>http://explorerv2.fydcoin.com/network</strong>](http://explorer.fydcoin.com/masternodes) </br>
+
+<strong>FYD wiki</strong> </br>
+FYD focusses on educating newcomers through articles and free online video’s about Cryptocurrency, Staking crypto, Mining crypto, Masternodes, NFT Tokens and much more.</br>
+<strong>► Crypto for beginners:</strong> [https://fydcoin.com/crypto](https://fydcoin.com/crypto) </br>
+<strong>► Mining for beginners:</strong> [https://fydcoin.com/mining](https://fydcoin.com/mining) </br>
+<strong>► Staking for beginners:</strong> [https://fydcoin.com/staking](https://fydcoin.com/staking) </br>
+<strong>► Masternodes for beginners:</strong> [https://fydcoin.com/masternode](https://fydcoin.com/masternode) </br>
  
 ### FYDCoin Specs
 
@@ -15,8 +44,7 @@ Backup Explorer: [Backup explorer](http://149.28.168.37:3001/)
 <tr><td>Algo</td><td>X11</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>650M</td></tr>
-<tr><td>Premine</td><td>650,000 FYD</td></tr>
+<tr><td>Max Coin Supply</td><td>650M</td></tr>
 </table>
 
 RPC Port 37484 
