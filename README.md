@@ -6,7 +6,7 @@ FYD is a decentralized online community of <strong>freelancers</strong> and <str
 
 <strong>Website:</strong> [<strong>fydcoin.com</strong>](https://www.fydcoin.com) </br>
 <strong>Whitepaper:</strong> [<strong>Whitepaper_FYD_2021</strong>](https://www.fydcoin.com/whitepaper_FYD_cryptocurrency.pdf) </br>
-<strong>Block Explorer:</strong> [<strong>https://explorer.fydcoin.com</strong>](http://explorer.fydcoin.com/) </br>
+<strong>Block Explorer:</strong> [<strong>explorer.fydcoin.com</strong>](http://explorer.fydcoin.com/) </br>
 <strong>Backup Explorer:</strong> [<strong>explorerv2.fydcoin.com</strong>](https://explorerv2.fydcoin.com) </br>
 
 
